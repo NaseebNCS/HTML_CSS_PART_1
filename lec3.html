@@ -1,0 +1,1286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+  <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaseebCodeStudio</title>
+</head>
+
+<body>
+  <!-- icon right  -->
+  <a href="https://www.youtube.com/@NaseebCodeStudio/playlists" target="_blank">
+    <div class="icon shadow-box"></div>
+  </a>
+<main>
+  <!-- ==================📃 Drop One ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop1" />
+      <label for="drop1">HTML HEAD</label>
+      <div class="content">
+        <p>
+          <strong>HEAD SECTION</strong>
+          <br />
+          <em>
+            The HTML <i>&lt;head&gt;&lt;/head&gt;</i> section is used to
+            provide information about a web page and links related to
+            stylesheets and other third party resources. <br />When we insert
+            the boilerplate code using the Shift + 1 key, you will see meta
+            elements there. The word meta simply means 'data about data'.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Two ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop2" />
+      <label for="drop2">Meta Elements</label>
+      <div class="content">
+        <p>
+          <strong>Meta Character set</strong><br />
+          <em>
+            The <i>&lt;meta charset&gt;</i>
+            element is used to define the character set of a website.
+            <br />
+            Computers <span>don’t actually understand</span> letters like A,
+            B, C, or NCS. They only understand numbers, which are represented
+            in binary (0s and 1s). A character set is a system that maps each
+            character to a numeric value so the computer can display it
+            correctly.
+            <br />
+            The first widely used character set was
+            <span>ASCII</span> (American Standard Code for Information
+            Interchange). ASCII could only represent English characters, so it
+            was very limited.
+            <br />
+            Over time, new character sets were created to support more symbols
+            and international languages. Today, the most commonly used
+            character set is <span>UTF-8</span> (Unicode Transformation
+            Format), which can represent almost all characters in the world.
+            <br />
+            By using the <i>&lt;meta charset="UTF-8"&gt;</i> element, we tell
+            the browser which character set our HTML document is using.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Meta Viewport</strong> <br />
+          <em>
+            The viewport is the <span>visible area of a webpage</span>. On
+            mobile devices and tablets, the viewport is smaller, while on
+            computers it is larger.
+            <br />
+            On a desktop, we can test different viewport sizes by simply
+            resizing the browser window.
+            <br />
+            The meta viewport tag helps control
+            <span>how a webpage looks</span> on different devices. For
+            example:
+            <br />
+            <i>&lt;meta name="viewport" content="width=device-width,
+              initial-scale=1.0"&gt;</i>
+            <br />
+            <span>width=device-width</span> tells the browser to match the
+            screen’s width.
+            <br />
+            <span>initial-scale=1.0</span> sets the default zoom level.
+            <br />
+            We use the viewport meta tag so our page looks good and responsive
+            across all devices.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Meta Description</strong>
+          <br />
+          <em>
+            <i>&lt;meta name="description" content="This is a short summary of
+              the webpage."&gt;</i>
+            <br />
+            Provides a summary of the page.
+            <br />
+            Important for SEO because search engines display it in search
+            results.
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Meta Author</strong>
+          <br />
+          <em>
+            <i> &lt;meta name="author" content="Naseeb Khan"&gt; </i> <br />
+            Defines the author of the webpage or content.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Meta Refresh / Redirect</strong>
+          <br />
+          <em>
+            <i>
+              &lt;meta http-equiv="refresh" content="5;
+              url=https://example.com"&gt;
+            </i>
+            <br />
+            Refreshes the page or redirects after a given time.
+            <br />
+            Example: Redirects to another site after 5 seconds.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Your Webpage should Have:</strong>
+          <br />
+          <em>
+            At minimum, every webpage should include:
+            <br />
+            <i>&lt;meta charset="UTF-8"&gt;</i>
+            <br />
+
+            <i>&lt;meta name="viewport" content="width=device-width,
+              initial-scale=1.0"&gt;
+            </i>
+
+            <br />
+            <i>
+              &lt;meta name="description" content="Your page description
+              here"&gt;
+            </i>
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Three ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop3" />
+      <label for="drop3">Text Elements</label>
+      <div class="content">
+        <p>
+          <strong>Paragraph</strong><br />
+          <em>
+            <i>&lt;p&gt;&lt;/p&gt;</i> This element is used to display text or
+            paragraphs on a website.
+            <br />
+            If an element has a closing tag, it must always be closed at the
+            right place. If we forget to close it, the browser will treat
+            everything after it as part of the same element. to Generate random text use <i>lorem</i> or <i>lorem100</i>
+            or <i>lorem1000</i> etc in vs code.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Emphasis</strong> <br />
+          <em>
+            <i>&lt;em&gt;&lt;/em&gt;</i> The Emphasis element representes
+            stress emphasis of its contents. <br />
+            By default Browser displays em content in italic, whenever you
+            want to display itlaic content you should use em element. <br />
+            Use
+            <i>&lt;em&gt;</i> when you want meaningful emphasis.
+            <br />
+            Use <i>&lt;i&gt;</i> when you just want italic styling.
+            <br />
+            HTML is not meant for styling. The <i>&lt;i&gt;</i> element is
+            outdated, so now we should use the <i>&lt;em&gt;</i> element
+            instead.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Strong</strong> <br />
+          <em>
+            The <i>&lt;strong&gt;</i> element represents strong importance,
+            seriousness, or urgency in its content. By default, the
+            <i>&lt;strong&gt;</i> element is displayed in bold. You should
+            also know that the old <i>&lt;b&gt;</i> element has been replaced
+            by <i>&lt;strong&gt;</i>, because <i>&lt;b&gt;</i> was only a
+            styling element, while <i>&lt;strong&gt;</i> adds semantic
+            meaning. </em><br />
+          Example:
+          <strong>NaseebCodeStudio</strong>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Wrapping</strong> <br />
+          <em>
+            Select the word or text you want to wrap with an element, then
+            press <span>Ctrl + Shift + P</span>. Search for Wrap, and then
+            type the element you want to use, such as <i>&lt;strong&gt;</i>.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Mark</strong> <br />
+          <em> <i>&lt;mark&gt;</i> used to highlight text. </em>
+          <br />
+          Example:
+          <mark>NaseebCodeStudio</mark>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Insert</strong> <br />
+          <em>
+            <i>&lt;ins&gt;</i> used to display updated or inserted text.
+            Before HTML5 <i>&lt;u&gt;</i> was used to underline text but
+            underline is a styling element.
+          </em>
+        </p>
+        <p>
+          <strong>Delete</strong> <br />
+          <em>
+            <i>&lt;del&gt;</i> used to display deleted text. Before HTML5 the
+            <i>&lt;s&gt;</i>, and <i>&lt;strike&gt;</i> were used but these
+            are again styling elements replaced by delete element. </em><br />
+          Example:
+          <del>NaseebCodeStudio</del>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Superscript</strong> <br />
+          <em>
+            <i>&lt;sup&gt;</i> used to display text in power form. <br />
+            Example: 10<sup>n</sup>
+          </em>
+        </p>
+        <p>
+          <strong>Subscript</strong> <br />
+          <em>
+            <i>&lt;sub&gt;</i> used to display text in index form. <br />
+            Example: H<sub>2</sub>O
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Horizontal Ruler</strong>
+          <br />
+          The <em><i>&lt;hr&gt;</i></em> tag is used to create a horizontal
+          line that separates content, it is a self closing tag. We can also
+          add attributes to it, such as <span>size="10"</span>,
+          <span>color="red"</span>, or <span>width="100px"</span>.
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Attributes</strong>
+          <br />
+          <em>
+            Attributes are used to provide extra information about an element.
+            <br />
+            Example: <i>&lt;html <span>lang='en'</span>&gt;</i>,
+            <i>&lt;hr <span>color='red'</span>&gt;</i>
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Line Break</strong>
+          <br />
+          <em>
+            The <i>&lt;br&gt;</i> is a self closing element used to break text
+            in next line.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <strong>Title Attribute</strong>
+          <br />
+          <em>
+            If we add the attribute <span>title="NaseebCodeStudio"</span> to
+            any element, then when we hover over that element, the title will
+            be displayed.
+            <br />
+            Example: <strong title="NaseebCodeStudio"><i>Hover me</i></strong>
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Common Text Elements</h3>
+        <p>
+          <em>
+            <i>&lt;pre></i> Displays preformatted text (keeps spaces, tabs, and line breaks as typed).
+            <br>
+            <i>&lt;small></i> Renders text smaller than normal (commonly used for fine print).
+            <br>
+            <i>&lt;big></i> Makes text bigger than normal (⚠️ deprecated in HTML5, use CSS instead).
+            <br>
+            <i>&lt;abbr></i> Defines an abbreviation or acronym (shows full form on hover when title is used).
+            <br>
+            <i>&lt;bdi></i> Isolates text that might have different text direction (useful for multilingual content).
+            <br>
+            <i>&lt;bdo></i> Overrides text direction (e.g., force left-to-right or right-to-left).
+            <br>
+            <i>&lt;cite></i> Refers to the title of a work (e.g., books, research papers, songs).
+            <br>
+            <i>&lt;code></i> Represents inline code or programming text.
+            <br>
+            <i>&lt;data></i> Links content with machine-readable data (value attribute).
+            <br>
+            <i>&lt;dfn></i> Marks the defining instance of a term.
+            <br>
+            <i>&lt;kbd></i> Represents keyboard input (e.g., Ctrl + C).
+            <br>
+            <i>&lt;q></i> Defines a short inline quotation (adds quotation marks automatically).
+            <br>
+            <i>&lt;rp></i> Fallback text for browsers that don’t support ruby annotations.
+            <br>
+            <i>&lt;rt></i> Provides pronunciation or explanation in ruby annotations.
+            <br>
+            <i>&tl;ruby></i> Container for ruby annotations (used in East Asian languages).
+            <br>
+            <i>&lt;s></i> Strikethrough text (shows something as wrong or outdated).
+            <br>
+            <i>&lt;samp></i> Represents sample output from a program or computer system.
+            <br>
+            <i>&lt;time></i> Represents a date, time, or duration (machine-readable).
+            <br>
+            <i>&lt;var></i> Represents a variable (in math or programming).
+            <br>
+            <i>&lt;wbr></i> Suggests a possible line break opportunity inside long words.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Four ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop4" />
+      <label for="drop4">Heading Elements</label>
+      <div class="content">
+        <p>
+          <strong>Headings</strong>
+          <br />
+          <em>
+            Heading elements are used to mark/highlight
+            <span>important and searchable</span> content on a website. In
+            HTML, there are 6 heading elements:
+            <br />
+            <i>&lt;h1&gt;</i><i>&lt;/h1&gt;</i><br />
+            <i>&lt;h2&gt;</i><i>&lt;/h2&gt;</i><br />
+            <i>&lt;h3&gt;</i><i>&lt;/h3&gt;</i><br />
+            <i>&lt;h4&gt;</i><i>&lt;/h4&gt;</i><br />
+            <i>&lt;h5&gt;</i><i>&lt;/h5&gt;</i><br />
+            <i>&lt;h6&gt;</i><i>&lt;/h6&gt;</i><br />
+            👉 When we search for something in a browser, the
+            <span>search engine</span> first looks for the query inside the h1
+            heading. If it doesn’t find it there, it checks the other headings
+            (h2, h3, and so on).
+            <br />
+            👉 <span>Note</span>: A webpage should have only one H1 heading.
+            If we use more than one H1, search engines may get confused about
+            the main topic of the page.
+            <br />
+            Headings should be used <span>step by step</span> to create a
+            proper hierarchy. For example, start with H1 for the page title,
+            then use H2 for sections, and inside those sections, you can use
+            <i>&lt;h3&gt;</i>, and so on.
+            <br />
+            So, if we have two sections on a single page, the page should
+            begin with <i>&lt;h1&gt;</i>, and each section should use
+            <i>&lt;h2&gt;</i> to maintain a clear structure. The other
+            headings (h2–h6) can be used as needed to structure the content,
+            Heading 1 is the <span>most important</span> heading, Heading 6 is
+            the <span>Least important</span> heading. Don't use headings for
+            text sizing. The better we use these headings the better search engine represent our website.
+          </em>
+        </p>
+        👇Example:
+        <br />
+        <h1>Heading 1</h1>
+        <h2>Heading 2</h2>
+        <h3>Heading 3</h3>
+        <h4>Heading 4</h4>
+        <h5>Heading 5</h5>
+        <h6>Heading 6</h6>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Five ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop5" />
+      <label for="drop5">HTML Entities</label>
+      <div class="content">
+        <p>
+          <strong>Enteties</strong>
+          <em>
+            <br> Some characters are reserved in HTML, which means we can’t display them directly on a webpage. To show
+            these characters, we use HTML entities.
+            <br>
+            For example, if we want to display <i>&lt;html&gt;</i>, we can’t write it directly because the browser
+            treats it as an actual HTML tag. Instead, we use HTML entities like this: <i>&lt;html&gt</i>;.
+            <br>
+            All HTML entities start with & and end with ;. Between them, we write a code that represents the reserved
+            symbol or special character.
+            <br>
+            HTML entities are also useful for showing characters that aren’t available on the keyboard.
+            <br>
+            You don’t need to memorize these entities there are many tools and websites (like Google) where you can
+            quickly find them.
+            <br>
+            Here are some useful HTML entities:
+            <br>
+            &nbsp; code is: <i>& nbsp ;</i> used to create a single character equal space or non breaking space.
+            <br>
+            &lt; code is: <i>& lt ;</i> &lt; (less than)
+            <br>
+            &gt; code is: <i>& gt ;</i> > (greater than)
+            <br>
+            &amp; code is: <i>& amp ;</i> & (ampersand)
+            <br>
+            &quot; code is: <i>& quot ;</i> " (double quotes)
+            <br>
+            &apos; code is: <i>& apos ;</i> ' (single quote)
+            <br>
+            &copy; code is: <i>& copy ;</i> © (copyright)
+            <br>
+            &reg; code is: <i>& reg ;</i> ® (registered trademark)
+            <br>
+            &trade; code is: <i>& trade ;</i> ™ (trademark)
+            <br>
+            &euro; code is: <i>& euro ;</i> € (Euro symbol)
+            <br>
+            &pound; code is: <i>& pound ;</i> £ (Pound symbol)
+            <br>
+            &yen; code is: <i>& yen ;</i> ¥ (Yen symbol)
+            <br>
+            &larr; code is: <i>& larr ;</i> ← (Left Arrow)
+            <br>
+            &rarr; code is: <i>& rarr ;</i> → (Right Arrow)
+            <br>
+            &uarr; code is: <i>& uarr ;</i> ↑ (Up Arrow)
+            <br>
+            &darr; code is: <i>& darr ;</i> ↓ (Down Arrow)
+            <br>
+            &harr; code is: <i>& harr ;</i> ↔ (Left-Right Arrow)
+            <br>
+            &crarr; code is: <i>& crarr ;</i> ↵ (Carriage Return / Enter Arrow)
+            <br>
+            &lArr; code is: <i>& lArr ;</i> ⇐ (Double Left Arrow)
+            <br>
+            &rArr; code is: <i>& raArr ;</i> ⇒ (Double Right Arrow)
+            <br>
+            &uArr; code is: <i>& uArr ;</i> ⇑ (Double Up Arrow)
+            <br>
+            &dArr; code is: <i>& dArr ;</i> ⇓ (Double Down Arrow)
+            <br>
+            &hArr; code is: <i>& hArr ;</i> ⇔ (Double Left-Right Arrow)
+            <br>
+            visit: <a href="https://html.spec.whatwg.org/multipage/named-characters.html" target="_blank">Dev W3</a>
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Six ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop6" />
+      <label for="drop6">HTML Emojies</label>
+      <div class="content">
+        <strong>How to Show Symbols/Character/Emojies on a Webpage: </strong>
+        <br>
+        <p>
+          <em>
+            1. HTML Entities Use special codes that start with & and end with ;.
+            <br>
+            Example:
+            & copy ; ©
+            & hearts ; ♥
+            <br>
+            2. Unicode (Decimal / Hex Codes) Use &#...; (decimal) or &#x...; (hex). <br>
+            Example: & #169 ; ©
+            & #x2764 ; ❤
+            <br>
+            3. Direct Emojis / Symbols You can directly paste emojis or symbols into HTML. <br>
+            Example:
+            😊 👍 ❤️
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <p>
+          <strong>Resources to Find symbols & Emojis</strong>
+          <br>
+          1. <a href="https://www.w3schools.com/html/html_symbols.asp" target="_blank">W3Schools</a>
+          <br>
+          2. <a href="https://developer.mozilla.org/en-US/docs/Glossary/Entity" target="_blank">MDN</a>
+          <br>
+          3. <a href="https://symbl.cc/" target="_blank">Symbl</a>
+          <br>
+          4. <a href="https://emojipedia.org/" target="_blank">EmojiPedia</a>
+          <br>
+          5. <a href="https://getemoji.com/" target="_blank">getemoji</a>
+        </p>
+
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Seven ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop7" />
+      <label for="drop7">HTML HyperLinks</label>
+      <div class="content">
+        <h3>Links</h3>
+        <p>
+          <em>
+            Almost every web page connects to other pages or websites.
+            <br>
+            To create a link, we use the anchor element <i>&lt;a&gt;</i>.
+            <br>
+            Every anchor tag should have the <i>href=""</i> attribute. href stands for Hypertext Reference, which means
+            the URL
+            or link.
+            <br>
+            For example, if we create another page named about.html and want to link it here, we can write: <i>&lt;a
+              href="about.html"&gt;</i>About Page<i>&lt;/a&gt;</i><br>
+            👇Result
+            <br>
+            <a href="about.html">Click to open about page</a>
+            <br>
+            want to open link in a new tab use <span>target="_blank"</span> attribute just after <span>href
+              attribute</span><br>
+            👇Result
+            <br>
+            <a href="about.html" target="_blank">Click to open about page</a>
+            <hr color="red" style="margin-block: 8px" />
+            <strong>Hyper Image</strong><br> Instead of only linking text, we can also link images or buttons. For
+            example:
+            <i>&lt;a href="about.html" target="_blank"&gt; <br> &nbsp;&nbsp;&nbsp;
+              &lt;img src="NCS.png" alt="Logo of NaseebCodeStudio" width="100px"&gt; <br>
+              &lt;/a&gt;</i>
+
+            <br>
+            👇Result: <br>
+            <a href="about.html" target="_blank">
+              <img src="NCS.png" alt="Logo of NaseebCodeStudio" width="100px">
+            </a>
+            <br>
+
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <strong>Absolute VS Relative</strong>
+        <p>
+          <em>
+            A relative URL starts from the location of the current page.
+            <br>
+            If both pages are in the same folder, you can access the other page just by typing its name and extension,
+            for example:
+            <span>secondPage.html</span>
+            <br>
+            If the page is inside a child folder, you write the folder name first, then the page name:
+            <span>NCS_Folder/secondPage.html</span>
+            <br>
+            If the page is in the parent folder (one level up), use <span>../</span> before the page name. For example:
+            <span>../secondPage.html</span>
+            <br>
+            If the page is many levels up, you repeat <span>../</span> as many times as needed. For example:
+            <span>../../../secondPage.html</span> three levels up.
+            <br>
+            <b>Note:</b> This can look messy and hard to read. That’s why we sometimes use an absolute URL.
+            <br>
+            An absolute URL starts from the root of the website by using <span>/</span>. It points directly to the exact
+            page, no
+            matter where the current file is located. Example: <span>/secondPage.html</span>
+            <br>
+            <b>In simple words:</b>
+            <br>
+            - Relative links are used for pages in the <span>same project</span> or folder structure.
+            <br>
+            - Absolute links always <span>start from the root</span> of the website or <span>Linking external
+              Pages</span> from other URLs like from youtube.com, google.com, etc.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <p>
+        <h3>Non HTML Documents</h3>
+        <em>
+          We already learned how to link HTML documents, but we can also link non-HTML files such as images, software,
+          MS Office files, PDFs, and more.
+          <br>
+          Example of linking an image:
+          <br>
+          <i>&lt;a href="NCS.png"&gt;My Logo&lt;/a&gt;</i>
+          <br>
+          👇Result
+          <br>
+          <a href="NCS.png">My Logo</a>
+          <br>
+          If we want the user to download the image instead of just opening it, we simply add the <span>download</span>
+          attribute after <span>href=""</span>:
+          <br>
+          <a href="NCS.png" download>Download NCS Logo</a>
+          <br>
+          - In the href, you can use the name of any file PDF, image, video, software, etc.
+          <br>
+          <hr color="red" style="margin-block: 8px" />
+          <strong>Section link</strong> <br>
+          We can also create links to <span>jump to specific sections</span> on the same page. <br>
+          For example, if we want to jump to a CSS section at the bottom of the page, we need to give that section a
+          unique identifier (ID).
+          <br>
+          Then, we create a link to that ID:
+          <br>
+          <i>&lt;a href="#css_section"&gt;CSS&lt;/a&gt;</i>
+          <br>
+          👇Result <br>
+          <a href="#css_section">CSS</a>
+          <br>
+          Here, css_section can be replaced with any meaningful name you choose.
+          <br>
+          To jump top of the page use anchor like this:
+          <br>
+          <i>&lt;a href="#"&gt;Jump top of the page&lt;/a&gt;</i>
+          <br>
+          👇Result
+          <br>
+          <a href="#">Jump top of the page</a>
+          <br>
+          <hr color="red" style="margin-block: 8px" />
+          <strong>External websites</strong><br>
+          <em>
+            To link external webpages, we cannot use relative URLs. We must use absolute URLs. For example, using /
+            takes us to the root of the current website, but there is no 'google' folder there. That’s why we need to
+            start with the protocol or copy like direct from the browser, like <i>&lt;a href="https://google.com"
+              target"_blank"&gt;Google&lt;/a&gt;</i>.
+            result 👉🏻 <a href="https://google.com" target="_blank">Google</a>.
+          </em>
+          <hr color="red" style="margin-block: 8px" />
+          <strong>Linking Email</strong><br>
+          <em>
+            To link Email/Gmail to the website we going to use <i>&lt;a
+              href="mailto:naseebkhan.contact.me@gmail.com"&gt;</i>Mail Naseeb<i>&lt;/a&gt;</i> result👉🏻 <a
+              href="mailto:naseebkhan.contact.me@gmail.com">Mail Naseeb</a>
+          </em>
+          <hr color="red" style="margin-block: 8px" />
+          Sections for example of section links:
+          <h4>HTML</h4>
+          <p>
+            Example text Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquid nobis placeat fugiat,
+            debitis totam
+            eos velit cupiditate atque repudiandae perspiciatis, consectetur nulla unde tempora! Labore ipsum temporibus
+            quisquam deserunt hic delectus similique? Provident veniam ratione, odit architecto tempora obcaecati
+            perspiciatis, dolore, a veritatis nihil voluptate. Autem consequatur error accusantium.
+          </p>
+          <i>&lt;h4 id="css_section"&gt;CSS&lt;/h4&gt;</i>
+          <br>
+          👇Result:
+          <h4 id="css_section">CSS</h4>
+          <p>
+            Example text Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque aliquid nobis placeat fugiat,
+            debitis totam
+            eos velit cupiditate atque repudiandae perspiciatis, consectetur nulla unde tempora! Labore ipsum temporibus
+            quisquam deserunt hic delectus similique? Provident veniam ratione, odit architecto tempora obcaecati
+            perspiciatis, dolore, a veritatis nihil voluptate. Autem consequatur error accusantium.
+          </p>
+
+        </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Eight ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop8" />
+      <label for="drop8">HTML Images</label>
+      <div class="content">
+        <h3>Images</h3>
+        <!-- object-fit: cover  -->
+        <p>
+          <em>
+            Now let’s talk about images and how to add them to a webpage.
+            <br>
+            There are many websites where you can download free images, such as:
+            <br>
+            1. unsplash.com
+            <br>
+            2. vecteezy.com
+            <br>
+            3. pixabay.com
+            <br>
+            4. pexels.com
+            <br>
+            5. pngwing.com
+            <br>
+            6. wikimedia.org
+            <br>
+            👉 After downloading an image, copy it into your coding folder. <br>
+            👉Always give the image a <span>simple and descriptive</span> name (for example: NCSlogo.png instead of
+            img1.png). <br>
+            This is a small <span>SEO tip</span> search engines will better understand and index your webpage images.
+            <br>
+
+            Now let’s learn how to add (or "mark") an image in HTML.
+            We use the <i>&lt;img&gt;</i> tag like this:
+            <br>
+            <i>
+              &lt;img src="NCS.png" alt="NCS company logo" &gt;
+            </i>
+            <br>
+            👇Result <br>
+            <img src="NCS.png" alt="NCS company logo" width="200px">
+            <br>
+            <span>src=""</span>: stands for "source". Here you put the path of the image (where it is coming from).
+            <br>
+            <span>alt=""</span>: stands for "alternative text". This describes the image in case it doesn’t load.
+            <br>
+           <strong> Q: Why use alt text?</strong>
+            <br>
+            - It is not required but highly recommended.
+            <br>
+            - Screen readers (for visually impaired users) read this text aloud.
+            <br>
+            - It helps search engines understand what your image is about.
+            <br>
+            - If the image fails to load, the text will still be shown.
+            <br>
+            👉 So always use a meaningful description. For example:
+            ❌ Wrong: "image1"
+            <br>
+            ✅ Correct: "NCS Company Logo"
+            <br>
+            - For resizing or styling images, we use <span>CSS</span> (we will cover this later). For now, just focus on
+            adding the image.
+            <br>
+            <strong>Finally</strong>, if you want to show an image directly from a website, you can:
+            <br>
+            - Right-click on the image.
+            <br>
+            - Copy the image address.
+            <br>
+            - Paste it inside the src="" attribute.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Nine ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop9" />
+      <label for="drop9">Video, Audio & Iframe</label>
+      <div class="content">
+        <em>Let's see how to embid video and audio on website.</em>
+        <h3>Video</h3>
+        <p>
+          <em>
+            You can use the same resources (just like in the image section) to download videos, audios, or any type of
+            media.
+            <br>
+            If you don’t already have a video, download one and place it in the same folder as your coding files. Best
+            practice is to seperate media files from coding files creating seperate folder Next,
+            use the <i>
+              &lt;video&gt;&lt;/video&gt;
+            </i> element to show the video on a website. It’s a good idea to give your video file a descriptive name so
+            <span>search engines</span> can understand what the video is about.
+            <br>
+            Example: <i>&lt;video controls src="OUTRO.mp4" width="200px"&gt;&lt;/video&gt;</i> In the video / audio
+            element, we can add text as a backup. If a user opens the website in an old browser or if the video/audio
+            element is not supported, that text will be shown.
+          </em>
+        </p>
+       
+        <p>
+          <em>
+            Just like the <i>&lt;img&gt;</i> element, here we also use the <span>src=""</span> attribute.
+            <br>
+            - controls: A boolean attribute. When written, it shows video <span>controls</span> (play, pause,
+            fullscreen, volume, etc.). If not used, the controls will not appear.
+            <br>
+            - autoplay: A boolean attribute. It makes the video <span>play automatically</span> when the page loads.
+            <br>
+            - muted: Often used with autoplay. It mutes the video so users <span>don’t get loud sounds</span> if their
+            device volume is high.
+            <br>
+            - loop: Makes the video <span>play again</span> automatically after it ends (non-stop repeat).
+            <br>
+            - poster: <span>poster="posterImage.jpg"</span> to show an image (poster) before the video starts playing.
+            As we see youtube videos thumbnail.
+          </em>
+        </p>
+        <strong>Method Two</strong>
+        <p>
+          <em>
+            Using <i>&lt;source&gt;</i> element to show video
+            Example: <br> <i>&lt;video controls width="400px"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&lt;source src="OUTRO.mp4"&gt; <br>
+              &lt;/video&gt; </i> <br>
+            result'll be the same.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <h3>Audio</h3>
+        <p>
+          <em>
+            The process is almost the <span>same as we did for video</span>. First, download any music or audio from the
+            same sources and copy it into your coding folder. To <span>keep things organized</span>, create a separate
+            folder named AUDIO.
+            <br>
+            Use the <i>&lt;audio src="" controls &gt;&lt;/audio&gt;</i> element to add audio to your webpage. Always
+            include the controls attribute so users can play, pause, or adjust the volume. The audio element also
+            supports other attributes, just <span>like the video element</span>, so try using them as well.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <h3>Can I Use</h3>
+        <p>
+          <em>
+            These days, most browsers give excellent support for playing videos using the video element. However,
+            <span>some browsers</span> still don’t support it. To check browser compatibility, we <span>can use
+              caniuse.com</span>. This website shows how different browsers support HTML and CSS features.
+            <br>
+            If you are targeting a specific browser, you should always check feature support on caniuse. For example, if
+            you open caniuse.com and search for video, you’ll see red and green boxes.
+            <br>
+            - <strong>Red boxes</strong> mean that version of the browser does not support the feature.
+            <br>
+            - <strong>Green boxes</strong> mean that version of the browser supports the feature.
+            <br>
+            If you <span>hover your mouse over any box</span>, you’ll get more detailed information.
+          </em>
+        </p>
+<hr color="red" style="margin-block: 8px">
+         <h3>&lt;iframe&gt;: Inline Frame Element</h3>
+         <p>
+           <em>
+             The <span>&lt;iframe&gt;</span> element is used to display another web page or external content inside the current
+             webpage. It creates an inline frame where you can load websites, YouTube videos, PDFs, maps, or any other embeddable
+             content.  
+             <br>
+             For example, if you want to show another website, you can use:
+             <br>
+             <strong>&lt;iframe src="https://example.com" width="600" height="400"&gt;&lt;/iframe&gt;</strong>
+             <br>
+             This will load the entire webpage from <span>example.com</span> inside your own page.  <br>
+               <b>Note:</b> Some Websites Don't support this.
+             <br>
+             You can also use iframes to <span>display YouTube videos</span> by copying the embed code from YouTube. For example:
+             <br>
+             <strong>&lt;iframe width="560" height="315" src=" src="https://www.youtube.com/embed/IxxFK8Bc6Ew?si=v_TvSY8IEjLME4XT" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen"
+               &gt; Your Browser Don't Support &lt;/iframe&gt;</strong>
+             <br>
+             Similarly, if you want to <span>show a PDF file</span> directly on your page, use:
+             <br>
+             <strong>&lt;iframe src="yourFile.pdf" width="100%" height="600"&gt;&lt;/iframe&gt;</strong>
+             <br>
+             Always make sure that the website or file you are embedding allows being displayed in an iframe. Some websites block
+             embedding for security reasons using the <strong>X-Frame-Options</strong> header.
+             <br>
+             To check browser compatibility or iframe-related restrictions, you can visit <span>caniuse.com</span> and search for
+             “iframe” or “embed.” It shows detailed support information across browsers.
+           </em>
+         </p>
+
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Ten ================== -->
+  <ul class="drop" >
+    <li>
+      <input type="checkbox" id="drop10" />
+      <label for="drop10">HTML Lists</label>
+      <div class="content">
+        <em>There are Types of Lists in HTML. The Type which we use the most is ul. let's explore them.</em>
+        <h3>UnOrdered List</h3>
+        <p>
+          <em>
+            We use the <i>&lt;ul&gt;</i> (unordered list) element when the <span>order of items doesn’t</span> matter. A
+            common
+            use of this element is in navigation menus. In fact, most <span>navigation bars</span> you see on websites
+            are created using unordered lists.
+            <br>
+            We can also use unordered lists to display objects, images, shopping carts, and more anywhere the order
+            doesn’t matter.
+            <br>
+            Here’s a simple example of creating a list of links using <i>&lt;ul&gt;</i> and <i>&lt;li&gt;</i> (list
+            items):
+            <br>
+            <i>
+              &lt;ul&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>About Me&lt;/li&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Courses&lt;/li&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Subscribe NaseebCodeStudio&lt;/li&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Contact Me&lt;/li&gt; <br>
+              &lt;/ul&gt; <br>
+            </i>
+            👇Result
+            <ul id="ul">
+              <li class="ulLi">About Me</li>
+              <li class="ulLi">Courses</li>
+              <li class="ulLi">Subscribe NaseebCodeStudio</li>
+              <li class="ulLi">Contact Me</li>
+            </ul>
+
+            - By default, list items are shown with bullet points. These bullets are <span>part of the styling</span>,
+            and we can change their shape (for example, circle, disc, square) or even remove them completely <span>using
+              CSS</span>.
+            <br>
+            - We can also create a <span>nested list</span> to show a hierarchy. For example, if we want to display
+            course names under the “Courses” item:
+            <br>
+            <i>
+              &lt;ul> <br>
+              &nbsp;&lt;li>About Me&lt;/li> <br>
+              &nbsp;&lt;li>Courses <br>
+              &nbsp;&nbsp;&lt;ul> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li>HTML&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li>CSS&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li>JavaScript&lt;/li> <br>
+              &nbsp;&nbsp;&lt;/ul> <br>
+              &nbsp;&lt;/li> <br>
+              &nbsp;&lt;li>Subscribe NaseebCodeStudio&lt;/li> <br>
+              &nbsp;&lt;li>Contact Me&lt;/li> <br>
+              &lt;/ul>
+            </i>
+            <br>
+            👇Result
+            <ul id="ul">
+              <li class="ulLi">About Me</li>
+              <li class="ulLi">Courses
+                <ul id="ul">
+                  <li class="ulLi">HTML</li>
+                  <li class="ulLi">CSS</li>
+                  <li class="ulLi">JavaScript</li>
+                </ul>
+              </li>
+              <li class="ulLi">Subscribe NaseebCodeStudio</li>
+              <li class="ulLi">Contact Me</li>
+            </ul>
+
+            This way, &lt;ul> helps us organize and group related items, especially in menus and navigation.
+
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>Ordered List</h3>
+        <p>
+          <em>
+            In contrast, there is <i>&lt;ol></i> (ordered list). We use it when the order of <span>steps matters</span>
+            because
+            changing the order would change the meaning. The process is the same as <i>&lt;ul></i>, but instead of
+            <i>&lt;ul></i> we use <i>&lt;ol></i>.
+            <br>
+            For example, let’s create the steps for making tea:
+            <br>
+            <i>
+              &lt;ol> <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Boil water.&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Add tea leaves or a tea bag.&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Let it steep for a few minutes.&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Add sugar and milk if desired.&lt;/li> <br>
+              &nbsp;&nbsp;&nbsp;&lt;li>Pour into a cup and enjoy.&lt;/li> <br>
+              &lt;/ol> <br>
+            </i>
+            👇Result
+            <ol id="ol">
+              <li class="olUl">Boil water.</li>
+              <li class="olUl">Add tea leaves or a tea bag.</li>
+              <li class="olUl">Let it steep for a few minutes.</li>
+              <li class="olUl">Add sugar and milk if desired.</li>
+              <li class="olUl">Pour into a cup and enjoy.</li>
+            </ol>
+
+
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>Discription List</h3>
+        <p>
+          <em>
+            Descriptive lists are mostly used in glossaries or when giving extra information (metadata) about an item.
+            <br>
+            A descriptive list starts with the <i>&lt;dl></i> tag (description list).
+            <br>
+            Inside <i>&lt;dl></i>, we use <i>&lt;dt></i> (description term) to define the item.
+            <br>
+            After that, we use <i>&lt;dd></i> (description data) to give details about that item.
+            <br>
+            Example:
+            <br>
+            <i>
+              &lt;dl> <br>
+              &nbsp; &nbsp; &nbsp;&lt;dt>Title&lt;/dt> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>The Ultimate HTML and CSS Course&lt;/dd> <br>
+
+              &nbsp; &nbsp; &nbsp;&lt;dt>Author&lt;/dt> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>Naseeb Khan&lt;/dd> <br>
+
+              &nbsp; &nbsp; &nbsp;&lt;dt>Skills&lt;/dt> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>HTML&lt;/dd> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>CSS&lt;/dd> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>Responsive Design&lt;/dd> <br>
+              &nbsp; &nbsp; &nbsp;&nbsp;&nbsp;&lt;dd>Search Engine Optimization&lt;/dd> <br>
+              &lt;/dl>
+            </i>
+            <br>
+            👇Result
+            <dl>
+              <dt>Title</dt>
+              <dd>&nbsp; &nbsp; &nbsp;The Ultimate HTML and CSS Course</dd>
+
+              <dt>Author</dt>
+              <dd>&nbsp; &nbsp; &nbsp;Naseeb Khan</dd>
+
+              <dt>Skills</dt>
+              <dd>&nbsp; &nbsp; &nbsp;HTML</dd>
+              <dd>&nbsp; &nbsp; &nbsp;CSS</dd>
+              <dd>&nbsp; &nbsp; &nbsp;Responsive Design</dd>
+              <dd>&nbsp; &nbsp; &nbsp;Search Engine Optimization</dd>
+            </dl>
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Eleven ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop11" />
+      <label for="drop11">HTML Tables</label>
+      <div class="content">
+
+        <h3>Creating a Table in HTML</h3>
+
+        <p>
+          <em>
+            To create a table, we use the &lt;table> element, which is used for showing tabular data.
+            <br>
+            In the past, tables were also used to create page layouts, but today that is considered bad practice,
+            because we now have better tools like CSS Grid and Flexbox for layouts.
+            <br>
+            Now, tables should only be used to display tabuler data.
+            <br>
+            A table is made up of rows and cells:
+            <br>
+            - To create a row, we use <i>&lt;tr></i> (table row).
+            <br>
+            - Inside a row, we add cells using <i>&lt;td></i> (table data) or <i>&lt;th></i> (table heading).
+            <br>
+            - The first row of a table is usually the header row, where we use <i>&lt;th></i> instead of <i>&lt;td></i>.
+            <br>
+            - For styling, always use CSS, but to quickly see borders while learning, we can use the
+            <span>border="1px"</span> attribute.
+            <br>
+            Example:
+            <br>
+            <i>
+              &lt;table border="1px"&gt; <br>
+              &nbsp;&lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;th>Category&lt;/th&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;th>Amount&lt;/th&gt; <br>
+              &nbsp;&lt;/tr&gt; <br>
+              &nbsp;&lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>Marketing&lt;/td&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>$100&lt;/td&gt; <br>
+              &nbsp;&lt;/tr&gt; <br>
+              &nbsp;&lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td&gt;Accounting&lt;/td&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td&gt;$200&lt;/td&gt; <br>
+              &nbsp;&lt;/tr&gt; <br>
+              &lt;/table&gt; <br>
+            </i>
+          </em>
+        </p>
+        👇Result
+        <table border="1px">
+          <tr>
+            <th>Category</th>
+            <th>Amount</th>
+          </tr>
+          <tr>
+            <td>Marketing</td>
+            <td>$100</td>
+          </tr>
+          <tr>
+            <td>Accounting</td>
+            <td>$200</td>
+          </tr>
+        </table>
+        <hr color="red" style="margin-block: 8px">
+        <h3>Structuring a Table</h3>
+        <p>
+          <em>
+            The above table works fine, but to make it more <span>meaningful</span> for search engines and accessible
+            for screen readers, we divide a table into three sections:
+            <br>
+            1. <i>&lt;thead&gt;</i> Table Header
+            <br>
+            2. <i>&lt;tbody&gt;</i> Table Body
+            <br>
+            3. <i>&lt;tfoot&gt;</i> Table Footer
+            <br>
+            Example with sections:
+            <br>
+
+            <i>
+              &lt;table border="1px"&gt; <br>
+              <br>
+              &lt;thead&gt; <br>
+              &lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;th>Category&lt;/th&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;th>Amount&lt;/th&gt; <br>
+              &lt;/tr&gt; <br>
+              &lt;/thead&gt; <br>
+              <br>
+              &lt;tbody&gt; <br>
+              &lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>Marketing&lt;/td&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>$100&lt;/td&gt; <br>
+              &lt;/tr&gt; <br>
+              &lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>Accounting&lt;/td&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>$200&lt;/td&gt; <br>
+              &lt;/tr&gt; <br>
+              &lt;/tbody&gt; <br>
+              <br>
+              &lt;tfoot&gt; <br>
+              &lt;tr&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;th>Total&lt;/th&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;td>$300&lt;/td&gt; <br>
+              &lt;/tr&gt; <br>
+              &lt;/tfoot&gt; <br>
+              <br>
+              &lt;/table&gt; <br>
+            </i>
+
+            🔥This way, the table is well-structured, semantic, and accessible.
+          </em>
+        </p>
+        👇Result
+        <table border="1px">
+          <thead>
+            <tr>
+              <th>Category</th>
+              <th>Amount</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Marketing</td>
+              <td>$100</td>
+            </tr>
+            <tr>
+              <td>Accounting</td>
+              <td>$200</td>
+            </tr>
+          </tbody>
+          <tfoot>
+            <tr>
+              <th>Total</th>
+              <td>$300</td>
+            </tr>
+          </tfoot>
+        </table>
+
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>Col & Row Span</h3>
+        <p>
+          <em>
+            What if we want a table cell <span>to cover</span> more than one column or more than one row? For this, we
+            use the attributes <span>colspan=""</span> and <span>rowspan=""</span>.
+            <br>
+            - colspan tells how many columns the cell should stretch across.
+            <br>
+            - rowspan tells how many rows the cell should stretch across.
+
+            <i>
+              <br>&lt;table border="1px"&gt;
+              <br>&lt;thead&gt;
+              <br>&lt;tr&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;th colspan="2">Expenses&lt;/th&gt;
+              <br>&lt;/tr&gt;
+              <br>&lt;tr&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;th>Category&lt;/th&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;th>Amount&lt;/th&gt;
+              <br>&lt;/tr&gt;
+              <br>&lt;/thead&gt;<br>
+              <br>&lt;tbody&gt;
+              <br>&lt;tr&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;td>Marketing&lt;/td&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;td>$100&lt;/td&gt;
+              <br>&lt;/tr&gt;
+              <br>&lt;tr&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;td>Accounting&lt;/td&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;td>$200&lt;/td&gt;
+              <br>&lt;/tr&gt;
+              <br>&lt;/tbody&gt;<br>
+              <br>&lt;tfoot&gt;
+              <br>&lt;tr&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;th>Total&lt;/th&gt;
+              <br>&nbsp;&nbsp;&nbsp;&lt;th>$300&lt;/th&gt;
+              <br>&lt;/tr&gt;
+              <br>&lt;/tfoot&gt;
+              <br>&lt;/table&gt; <br>
+            </i>
+            👇Result
+            <table border="1px">
+              <thead>
+                <tr align="center">
+                  <th colspan="2">Expenses</th>
+                </tr>
+                <tr>
+                  <th>Category</th>
+                  <th>Amount</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Marketing</td>
+                  <td>$100</td>
+                </tr>
+                <tr>
+                  <td>Accounting</td>
+                  <td>$200</td>
+                </tr>
+              </tbody>
+              <tfoot>
+                <tr>
+                  <th align="center">Total</th>
+                  <th align="center">$300</th>
+                </tr>
+              </tfoot>
+            </table>
+          </em>
+        </p>
+
+      </div>
+    </li>
+  </ul>
+  
+</main>
+
+  <br /><br /><br /><br />
+</body>
+<!-- <hr color="red" style="margin-block: 8px"> -->
+
+
+</html>
+
+
+
+
+

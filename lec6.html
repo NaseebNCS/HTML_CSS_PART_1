@@ -1,0 +1,2751 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+  <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaseebCodeStudio</title>
+</head>
+
+<body>
+  <!-- icon right  -->
+  <a href="https://www.youtube.com/@NaseebCodeStudio/playlists" target="_blank">
+    <div class="icon shadow-box"></div>
+  </a>
+<main>
+  <!-- ==================📃 Drop One ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop1" />
+      <label for="drop1">You'll Learn</label>
+      <div class="content">
+        <h3>You Will Learn</h3>
+        <p>
+          <em>
+            1. Various Wasy to provide CSS <br />
+            2. Normalizing css <br />
+            3. Selectors <br />
+            4. Colors <br />
+            5. Gradients <br />
+            6. Borders / Outline <br />
+            7. Shadows
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            if you want to learn CSS and become comfortable with it don't miss
+            any lesson. let's get started😜
+            <hr color="red" style="margin-block: 8px" />
+            <span>Note</span>: Write the code exactly as you see in the notes.
+            You will see the result when you run it. (I didn’t show the result
+            here.)
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Two ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop2" />
+      <label for="drop2">Providing CSS & Comments</label>
+      <div class="content">
+        <h3>Embedding / Providing CSS</h3>
+        <p>
+          <em>
+            There are three different ways to apply styles in HTML:
+            <br />
+            1. Internal CSS (Embedded Stylesheet): CSS is written inside the
+            <i>&lt;style></i> tag in the HTML file.
+            <br />
+            2. External CSS: CSS is written in a separate .css file and linked
+            to the HTML file.
+            <br />
+            3. Inline CSS: CSS is written directly inside an element’s style
+            attribute.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Internal / Embedded CSS</h3>
+        <p>
+          <em>
+            Example: 👇 <br />
+            <i>
+              &lt;head> <br />
+              &lt;style> <br />
+            </i>
+            &nbsp;&nbsp;&nbsp;p{ <br />
+            &nbsp;&nbsp;&nbsp; color: red; <br />
+            &nbsp;&nbsp;&nbsp;} <br />
+            <i>
+              &lt;/style> <br />
+              &lt;/head> <br />
+              &lt;body> <br />
+            </i>
+
+            &nbsp;&nbsp;&nbsp;<i>&lt;p></i>Lorem ipsum dolor sit, amet
+            consectetur adipisicing.<i>&lt;/p></i> <br />
+            &nbsp;&nbsp;&nbsp;<i>&lt;p></i>Lorem ipsum dolor sit, amet
+            consectetur adipisicing.<i>&lt;/p></i> <br />
+            <i> &lt;/body></i>
+          </em>
+        </p>
+        <p>
+          <em>
+            This process is very limited. If we have multiple HTML pages, the
+            styling will only <span>affect the current page</span>, not the
+            others. For example, if you later want to change the color of all
+            paragraphs across the whole website, this method will only update
+            the paragraphs on the current page. You would need to manually
+            edit every page, which is not recommended.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>External CSS</h3>
+        <p>
+          <em>
+            File <span>separation is very important</span> in computer
+            science. This idea is called Separation of Concerns.
+            <br />
+            It means keeping different responsibilities in different files.
+            For example:
+            <br />
+            - Write HTML in one file.
+            <br />
+            - Write CSS in another file.
+            <br />
+            Both are different languages with different purposes.
+            <br />
+            Think of it like a supermarket: there are separate sections for
+            fruits, vegetables, clothes, and electronics. If everything was
+            mixed together in one big section, it would be very hard to find
+            what you need.
+            <br />
+            That’s why we separate files in programming so things stay
+            organized and easier to manage.
+          </em>
+        </p>
+        <p>
+          <em>
+            Create a new external file named <span>style.css</span> and write
+            your CSS code in it. Then, link this file to your HTML document
+            inside the <i>&lt;head></i> section using: <br />
+
+            <i>&lt;link rel="stylesheet" <span>href="style.css"</span>></i>
+            <br />
+            Now, whenever you make changes in the <span>style.css</span> file,
+            those changes will automatically show up in your HTML page.
+            <br />
+            The best part is that you can use the same CSS file for multiple
+            HTML pages. This makes it easier to style your entire website from
+            one stylesheet.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>CSS Syntax</h3>
+        <p>
+          <em>
+            <i>
+              h1{ <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              }
+            </i>
+            <br />
+            In CSS, we first target an HTML element. Targeting an element is
+            called a selector in above there is <i> h1 </i> as a selector.
+            <br />
+            There are different types of selectors (we’ll learn them in
+            upcoming lessons).
+            <br />
+            After the selector, we use curly braces <i>{}</i>. This part is
+            called the selector body. Inside it, we write: <br />
+
+            &nbsp;&nbsp;&nbsp;- A property: tells what style we want to change
+            (example: color).
+            <br />
+            &nbsp;&nbsp;&nbsp;- A value: tells the setting for that property
+            (example: red).
+            <br />
+            Together, the property and value make a declaration, written like
+            this: <br />
+            <i>color: red;</i><br />
+            Each declaration ends with a semicolon (;).
+            <br />
+            <i>
+              p { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              &nbsp;&nbsp;&nbsp;background-color: black; <br />
+              } <br />
+            </i>
+
+            This means: All <i>&lt;p></i> (paragraphs) will have red text &
+            black background.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Inline CSS</h3>
+        <p>
+          <em>
+            We use inline CSS by writing styles directly inside an HTML
+            element. For example:
+            <br />
+
+            <i>&lt;p style="color: green; background-color: black;"></i>
+            <h4 style="
+                  color: rgb(0, 255, 0);
+                  background-color: black;
+                  font-weight: normal;
+                  padding: 5px;
+                ">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+              Facilis, veniam.
+            </h4>
+            <i>&lt;/p></i> <br />
+
+            However, using inline CSS is
+            <span>not a good practice</span> because:
+            <br />
+            &nbsp;&nbsp;&nbsp;- It makes the code messy and hard to maintain.
+            <br />&nbsp;&nbsp;- It breaks the “separation of concerns”
+            principle (HTML should handle structure, CSS should handle
+            styling).
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+            <h3>Cascading</h3>
+            If we use multiple styles (inline, internal, and external CSS) in
+            one HTML file, remember: <br />
+            ~~~ The style that is closest to the element will be applied.
+            <br />
+            In this example, the inline style is the closest to the paragraph,
+            so it will override other styles.
+            <br />
+            This concept is called <span>cascading</span>, which is why the
+            language is named Cascading Style Sheets (CSS).
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Comments✍️</h3>
+        <p>
+          <em>
+            <strong>What is a comment: </strong>
+            A comment <span>is a note</span> you write in your CSS code for
+            yourself or other developers. <br />
+            It does not run in the browser.
+            <br />
+            Why use comments? <br />
+            📝 To explain your code <br />
+            📝 To organize sections of your CSS <br />
+            📝 To temporarily disable a CSS rule <br />
+
+            <strong>How to write a comment in CSS?</strong>
+            <br />
+            <i>/* This is a CSS comment */</i> <br />
+            p { <br />
+            &nbsp; &nbsp; &nbsp; color: red;
+            <i>/* This makes the text red */</i> <br />
+            } <br />
+            &nbsp; &nbsp; - Think of comments as sticky notes inside your code
+            <span>helpful for remembering</span> why you wrote something.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Three ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop3" />
+      <label for="drop3">Zen Coding</label>
+      <div class="content">
+        <h3>Zen Coding (Emmet) shortcuts in VS Code</h3>
+        <p>Here’s a simple list of the most useful ones 👇</p>
+        <p>
+          <em>
+            <strong>1. Multiple Elements</strong><br />
+            &nbsp;&nbsp;li*3 <br />
+            creates 3 <i>&lt;>&lt;/li></i> tags.
+            <br />
+            <strong>2. Parent & Child Elements </strong><br />
+            &nbsp;&nbsp;ul>li
+            <br />
+            Creates a <i>&lt;ul></i> with one <i>&lt;li></i>inside.
+            <br />
+            &nbsp;&nbsp;ul>li*5 <br />
+            Create a <i>&lt;ul></i> with 5 <i>&lt;li></i>
+            items inside.
+            <br />
+            <strong>3. Siblings</strong> <br />
+            &nbsp;&nbsp;h1+h2+p
+            <br />
+            Creates
+            <i>
+              &lt;h1>&lt;/h1> <br />
+              &lt;h2>&lt;/h2> <br />
+              &lt;>&lt;/p>
+            </i>
+            <br />
+            <strong>4. Class</strong> <br />
+            &nbsp;&nbsp;div.container <br />
+            Creates <i> &lt;div clas="container">&lt;/div> </i> <br />
+            &nbsp;&nbsp;.box <br />
+            Creates <i> &lt;div class='box'>&lt;/div> </i>
+            <br />
+            <strong>5. ID</strong> <br />
+            &nbsp;&nbsp;div#header <br />
+            Creates &lt;div id="header">&lt;/div> <br />
+            <strong>6. Text Inside tags</strong> <br />
+            &nbsp;&nbsp;p{Hello World} <br />
+            Creates <i> &lt;p>Hello World&lt;/p> </i>
+            <br />
+            <strong>7. Nesting With Text</strong> <br />
+            &nbsp;&nbsp;ul>li*3{Item $} <br />
+            Creates: <br />
+            &lt;ul> <br />
+            &nbsp;&nbsp;&lt;li>Item 1&lt;/li> <br />
+            &nbsp;&nbsp;&lt;li>Item 2&lt;/li> <br />
+            &nbsp;&nbsp;&lt;li>Item 3&lt;/li> <br />
+            &lt;/ul> <br />
+            <strong>8. Attributes</strong> <br />
+            &nbsp;&nbsp;a[href="https://google.com"] <br />
+            Creates <i> &lt;a href="https://googl.com">&lt;/a> </i>
+            <br />
+            <strong>9. Class & Text with numbers</strong> <br />
+            &nbsp;&nbsp;.box$*3{Box $} <br />
+            Creates 👇 <br />
+            &lt;div class="box1">Box 1&lt;/div> <br />
+            &lt;div class="box2">Box 2&lt;/div> <br />
+            &lt;div class="box3">Box 3&lt;/div> <br />
+          </em>
+           <a href="https://docs.emmet.io/cheat-sheet/" target="_blank">Zen Coding Cheat Sheet</a>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Four ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop4" />
+      <label for="drop4">Normalizing CSS</label>
+      <div class="content">
+        <p>
+          <em>
+            As we know, there are many <span>different browsers</span>.
+            Unfortunately, they don’t always display HTML elements in the same
+            way. To fix this problem, we use a popular stylesheet called
+            <i>normalize.css</i>.
+            <br />
+            - What <i>normalize.css</i> does is apply some basic CSS styles to
+            HTML elements so that they look the<span>
+              same across all browsers</span>. This helps us avoid display issues when working with different
+            browsers.
+            <br />
+            - To get it, just search on Google for
+            <span>necolas.github.io/normalize.css/</span> or click this link:
+            <br /><i><a href="https://necolas.github.io/normalize.css/" target="_blank">Normalize CSS</a></i>
+            <br />
+            - On that page, you can download the latest version. You’ll also
+            find instructions for installing it with npm (for advanced
+            developers). For beginners, just download the CSS file.
+            <br />
+            - When you download it, you’ll get a file called normalize.css.
+            <br />
+            Now, link it to your HTML document like this:
+            <br />
+            <i>&lt;link rel="stylesheet" href="normalize.css"></i>
+            <br />
+
+            ⚠️ Important:<span> Always place</span> this link above your own
+            CSS file so the browser loads normalize.css first and then your
+            styles. You can also link more than one stylesheet to an HTML
+            document.
+            <br />
+            In short, <span>normalize.css</span> is a very useful tool for
+            frontend developers, and you’ll be using it in almost every HTML
+            project.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Five ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop5" />
+      <label for="drop5">Basic Selectors</label>
+      <div class="content">
+        <p>
+          <em>
+            in css there are different ways to select html elements we can
+            select elements by: <br />
+            1. Type <br />
+            2. ID <br />
+            3. Class <br />
+            4. Attribute <br />
+            5. Grouping Selector
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Element Selector</h3>
+        <p>
+          <em>
+            We can select elements in CSS by <span>their name</span>. This
+            means we directly use the element name to target it, and then
+            write the style inside curly braces { }.
+            <br />
+            Here are some examples of CSS code 👇
+            <br />
+            <i>
+              body { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+
+              h1 { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+
+              ul { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+
+              table { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>ID Selector</h3>
+        <p>
+          <em>
+            To target an element with a <span>unique identity</span>, we use
+            the ID selector in CSS. <br />
+            The ID selector is identified by the <span># symbol</span>,
+            followed by the name of the ID.
+            <br />
+            CSS code:
+            <br />
+            <i>
+              #products { <br />
+              &nbsp;&nbsp;&nbsp;background-color: black; <br />
+              } <br />
+            </i>
+            HTML code: <br />
+            <i>
+              &lt;section id="products"> <br />
+              &lt;/section>
+            </i>
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Class Selector</h3>
+        <p>
+          <em>
+            We can select (target) an element using <span>its class</span> in
+            CSS. <br />
+            A class is written with a <span>dot (.)</span> followed by the
+            class name.
+            <br />
+            CSS code:
+            <br />
+            <i>
+              .product { <br />
+              &nbsp;&nbsp;&nbsp;border: 5px solid red; <br />
+              }
+            </i>
+            <br />
+            HTML code:
+            <br />
+            <i>
+              &lt;section id="products"> <br />
+              &nbsp;&nbsp;&nbsp;&lt;article class="product">&lt;/article>
+              <br />
+              &nbsp;&nbsp;&nbsp;&lt;article class="product">&lt;/article>
+              <br />
+              &nbsp;&nbsp;&nbsp;&lt;article class="product">&lt;/article>
+              <br />
+              &lt;/section> <br />
+            </i>
+            Article elements with given class are targets.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Attribute Selector</h3>
+        <p>
+          <em>
+            We can also select elements in CSS <span>using attributes</span>.
+            <br />
+            This method isn’t very common, but it’s
+            <span>important to know</span> because you might see it in other
+            people’s code. <br />
+
+            CSS code:
+            <br />
+            <i>
+              a[target] { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+              a[href="https://google.com"] { <br />
+              &nbsp;&nbsp;&nbsp;color: black; <br />
+              } <br />
+            </i>
+
+            HTML Code: <br />
+            <i>
+              &lt;a href="https://google.com" target="_blank">Google&lt;/a>
+            </i>
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Types of Attribute Selectors</h3>
+        <p>
+          <em>
+            <strong>Exact Match</strong>
+            <em>Selects an element only if the attribute
+              <span>matches</span> exactly.</em>
+            <br />
+            <i>
+              a[href="https://google.com"] { <br />
+              &nbsp;&nbsp;&nbsp;color: black; <br />
+              } <br />
+            </i>
+
+            <strong>Contains a Word</strong>
+            Selects if the attribute contains a specific word. <br />
+
+            <i>
+              a[href*="google"] { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            Here, if <span>the word google</span> is found anywhere inside
+            href, it will be selected. <br />
+
+            <strong>Starts With</strong>
+
+            Selects if the attribute value starts with a certain word.
+
+            <br />
+            <i>
+              a[href^="https"] { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+
+            This will select all links that start with <span>https</span>.
+
+            <strong>Ends With</strong>
+
+            Selects if the attribute value ends with a certain word.
+            <br />
+            <i>
+              a[href$=".com"] { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+
+            This will select all links that end with <span>.com</span>.
+
+            <br />
+
+            <strong>Combine Multiple Conditions</strong>
+
+            You can combine different checks together.
+
+            <i>
+              a[href^="https"][href$=".com"] { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            This will select all links that start with <span>https</span> and
+            also end with <span>.com</span>. <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <span>In short</span>: Attribute selectors let you target elements
+            based on their attributes (like href, target, id, etc.).
+            <hr color="red" style="margin-block: 8px" />
+            <h3>Grouping Selector</h3>
+            <p>
+              <em>
+                if we want to apply the same styles to multiple elements
+                instead of selecting them seperatly we can target them at once
+                using with comma seperation that is what we call the grouping
+                selector. Example: p, .box, h1, #products{ color: red; } here
+                four different elements are targetted with comma sepeartion to
+                apply the same style on each selector.
+              </em>
+            </p>
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Six ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop6" />
+      <label for="drop6">Relational Selectors</label>
+      <div class="content">
+        <p>
+          <em>
+            Now we know how to <span>select elements</span>, but next we will
+            explore some more selectors so we don’t face problems with element
+            selection.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>All Child Selector</h3>
+        <p>
+          <em>
+            CSS CODE: <br />
+            <i>
+              #products p { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            HTML CODE:
+            <br />
+            <i>
+              &lt;section id="products"> <br />
+              &nbsp;&nbsp;&nbsp;&lt;p>
+            </i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;article> <br />
+              &nbsp;&nbsp;&nbsp;&lt;p>
+            </i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;/article> <br />
+              &lt;/section> <br />
+            </i>
+
+            This CSS means: select all <i>&lt;p></i> (paragraph) elements that
+            are inside the element with the id products. <br />
+            It doesn’t matter how deep the paragraph is nested, as long as it
+            is inside #products. <br />
+
+            In this example, there are two <i>&lt;p></i> tags: <br />
+
+            &nbsp;&nbsp;&nbsp;1. One directly inside
+            <i>&lt;section id="products"></i>.
+            <br />
+            &nbsp;&nbsp;&nbsp;2. One inside <i>&lt;article></i>, which is also
+            inside #products.
+            <br />
+            Both will turn red because they are descendants of the element
+            with the id products.
+            <br />
+            This type of CSS rule is called a descendant selector.
+            <br />
+            if we say <i> p.first{} </i> it means a paragraph with a class
+            name first.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Direct child Selector</h3>
+        <p>
+          <em>
+            What if we only want to select the paragraph inside the
+            <i>&lt;section></i> element that has the ID products? <br />
+            - We could give that paragraph its own id or class, but sometimes
+            if the parent already has an id, we don’t need to make the code
+            more complicated. In that case, we can use a relational selector.
+            <br />
+
+            - The <span>></span> (greater-than) symbol in CSS means “direct
+            child.” So if we write #products <span>></span> p, it will select
+            only the paragraph that is a direct child of the section with the
+            ID products, not the paragraphs inside deeper elements like
+            <i>&lt;article></i>. <br />
+
+            CSS CODE: <br />
+            <i>
+              #products > p { <br />
+              &nbsp;&nbsp;&nbsp; color: red; <br />
+              } <br />
+            </i>
+
+            HTML CODE:
+            <br />
+            <i>
+              &lt;section id="products"> <br />
+              &nbsp;&nbsp;&nbsp;&lt;p>
+            </i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;article> <br />
+              &nbsp;&nbsp;&nbsp;&lt;p></i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;/article> <br />
+              &lt;/section>
+            </i>
+
+            <br />
+            - This CSS will only color red the paragraph that is the direct
+            child of <i>&lt;section id="products"></i>. The
+            <i>&lt;p></i> inside <i>&lt;article></i> will not be affected.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Sibling Selector</h3>
+        <p>
+          <em>
+            What if we want to select elements that are
+            <span>siblings</span> of each other? <br />
+            For that, we use the <span>+ (adjacent sibling)</span> operator
+            between the selectors. It will select the element that comes
+            <span>immediately</span> after the first sibling. <br />
+
+            CSS CODE: <br />
+            <i>
+              #products + p { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            HTML CODE: <br />
+            <i>
+              &lt;section id="products"> <br />
+              &nbsp;&nbsp;&nbsp; &lt;p></i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;article> <br />
+              &nbsp;&nbsp;&nbsp; &lt;p></i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p> <br />
+              &lt;/article> <br />
+              &lt;/section> <br /></i>
+
+            <i> &nbsp;&nbsp;&nbsp; &lt;p></i>
+            This paragraph is the direct sibling of the section element.
+            <i> &lt;/p></i>
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>All Siblings Selector</h3>
+        <p>
+          <em>
+            If we want to select all matching siblings that come after a
+            <i>&lt;section></i> element, we use the
+            <span>~ (tilde)</span> selector.
+            <br />
+            👉 But if we use the <span>+ (plus) </span>selector, it will only
+            target the first direct matching sibling.
+
+            <br />
+            CSS CODE:
+            <br />
+            <i>
+              #products ~ p { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            HTML CODE: <br />
+            <i>&lt;section id="products"></i> <br />
+            <i> &lt;p></i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p>
+              <br />
+              &lt;article><br />
+              &lt;p>
+            </i>
+            Lorem ipsum dolor, sit amet consectetur adipisicing.
+            <i>
+              &lt;/p>
+              <br />
+              &lt;/article><br />
+              &lt;/section> <br />
+            </i>
+
+            <i>&lt;p></i>
+            This paragraph is the direct sibling of the section element.
+            <i>&lt;/p></i>
+            <br />
+            <i>&lt;p></i>
+            This paragraph is also the direct sibling of the section element.
+            <i> &lt;/p></i>
+            <br />
+            &nbsp; &nbsp; - This CSS will make all <i>&lt;p></i> tags that
+            come after the section turn red.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Relational Selectors</h3>
+        <p>
+          <em>
+            Relational selectors give cleaner code because
+            <span>we don’t need to assign</span> id or class to many HTML
+            elements.
+            <br />
+            But there are two problems with relational selectors:
+            <br />
+            &nbsp;&nbsp;&nbsp;1. They can be fragile.
+            <br />
+            &nbsp;&nbsp;&nbsp;2. They are slower than basic selectors.
+            <br />
+            <span>Fragile</span> means these selectors depend on the
+            <span>position</span> of an element in the DOM. If you move
+            elements around, the rules may break.
+            <br />
+            <strong>How browsers read relational selectors</strong>
+            <br />
+            For example:
+            <br />
+            CSS CODE:
+            <br />
+            <i> &nbsp;&nbsp;&nbsp;#products ~ p </i>
+            <br />
+            &nbsp;&nbsp;&nbsp;- We (humans) read it left to right: Select all
+            <i>&lt;p></i> elements that are siblings of
+            <span>#products</span>.
+            <br />
+            &nbsp;&nbsp;&nbsp;- The browser reads it right to left: It first
+            finds all <i>&lt;p></i> elements on the page, then checks if each
+            one is a sibling of <span>#products</span>.
+            <br />
+            If there are hundreds or thousands of <i>&lt;p></i> tags, the
+            browser will first select all of them, then discard the ones that
+            don’t match this wastes performance.
+            <br />
+            <strong>Quote by Donald Knuth:</strong>
+            <br />
+            “Premature optimization is the root of all evil.”
+
+            <hr color="red" style="margin-block: 8px" />
+
+            So, if you’re confident that the structure of your page (element
+            positions) will not change, you
+            <span>can use relational selectors</span>. Otherwise, it’s safer
+            and faster to use id or class selectors.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Seven ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop7" />
+      <label for="drop7">Pseudo Class Selectors</label>
+      <div class="content">
+        The name is very complicated but the use is very simple.
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>First & Last Child</h3>
+        <p>
+          <em>
+            In the example below, if we want to select the first paragraph
+            inside the <i>&lt;article></i> element, we can give it an id or
+            class, but there’s another way. We can use a pseudo-class selector
+            like :first-child.
+            <br />
+            Just focus on the selector, not the CSS property.
+            <br />
+            A pseudo-class selector is written with a
+            <span>colon :</span> followed by its name.
+            <br />
+            - <i>:first-child</i> means the very first child inside a parent.
+            It doesn’t matter if it’s a paragraph, a heading, or something
+            else.
+            <br />
+            - If later we add a new element at the top of the
+            <i>&lt;article></i>, that will become the first child instead.
+            <br />
+            <strong>CSS Code:</strong>
+            <br />
+            <i>
+              article :first-child { <br />
+              &nbsp;&nbsp;&nbsp;font-size: 140%; <br />
+              &nbsp;&nbsp;&nbsp;font-style: italic; <br />
+              } <br />
+            </i>
+            <strong>HTML Code:</strong> <br />
+            <i>&lt;article></i> <br />
+            <i>&nbsp;&nbsp;&nbsp;&lt;p></i>Lorem ipsum dolor sit amet.<i>&lt;/p></i>
+            <br />
+            <i>&nbsp;&nbsp;&nbsp;&lt;p></i>Lorem ipsum dolor sit amet.
+            <i>&lt;/p> <br />
+              &lt;/article></i>
+            <br />
+
+            Similarly, there is the <i>:last-child</i> pseudo-class, which
+            targets the last child inside a container.
+            <br />
+            ⚠️ <span>Keep in mind</span>: <i>:first-child</i> and
+            <i>:last-child</i> can be a bit fragile. If you add or move
+            elements, the “first” or “last” child changes, and your CSS rule
+            may no longer apply where you expect.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>First & Last Of Type</h3>
+        <p>
+          <em>
+            By type matching, we can select elements
+            <span>based on their type</span> (like headings, paragraphs,
+            lists, etc.) inside a parent element.
+            <br />
+            The <i>:first-of-type</i> selector is used to select the first
+            element of a <span>specific type inside a parent</span>, no matter
+            what other elements are around it.
+
+            <br />
+            <strong>CSS Code:</strong>
+
+            <br />
+            <i>
+              article :first-of-type { <br />
+              &nbsp;&nbsp;&nbsp;font-size: 140%; <br />
+              &nbsp;&nbsp;&nbsp;font-style: italic; <br />
+              } <br />
+            </i>
+            <strong>HTML Code:</strong> <br />
+            <i>&lt;article></i> <br />
+            <i>&lt;h2></i>NaseebCodeStudio<i>&lt;/h2></i> <br />
+            <i>&lt;p></i>Lorem ipsum dolor sit amet. <i>&lt;/p></i> <br />
+            <i>&lt;p></i>Lorem ipsum dolor sit amet. <i>&lt;/p></i> <br />
+            <i>&lt;/article></i> <br />
+            In this case, <i>:first-of-type</i> will select the first heading
+            <span>(h2)</span>, because it’s the first element of its type
+            inside <i>&lt;article></i>.
+            <br />
+            <strong>(Target only first paragraph)</strong>
+            <br />
+            <i>
+              article p:first-of-type { <br />
+              &nbsp;&nbsp;&nbsp;font-size: 140%; <br />
+              &nbsp;&nbsp;&nbsp;font-style: italic; <br />
+              } <br />
+            </i>
+            This will style only the first <i> &lt;p></i> element inside the
+            <i>&lt;article></i>.
+            <br />
+            <strong>:last-of-type</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp;The <span>:last-of-type</span> selector works
+            the same way but starts counting from the bottom of the parent
+            container. It selects the last element of a specific type.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>
+          Difference Between :first-child / :last-child and :first-of-type /
+          :last-of-type
+        </h3>
+        <p>
+          <em>
+            &nbsp;&nbsp;&nbsp;- :first-child / :last-child 👉🏻 Looks at the
+            position of the element as a child.
+            <br /><span>Example</span>: p:first-child means the first child
+            must be a paragraph. If another element (like <i>&lt;h2></i>)
+            comes before it, the paragraph will not be selected.
+            <br />
+            &nbsp;&nbsp;&nbsp;- :first-of-type / :last-of-type 👉🏻 Ignores
+            position and only checks element type.
+            <br /><span>Example</span>: p:first-of-type will always select the
+            first <i>&lt;p></i> inside the parent, even if it’s not the very
+            first child.
+            <br />
+            <span>In short</span>:
+            <br />
+            &nbsp;&nbsp;&nbsp; - Child selectors = depend on order (position).
+            <br />
+            &nbsp;&nbsp;&nbsp; - Type selectors = depend on type (tag name).
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Nth Child</h3>
+        <p>
+          <em>
+            Sometimes we want to style elements based on their position inside
+            a container. For example, in a table or a list with multiple rows
+            or items, we may want to select a specific item, only the odd
+            items, or only the even items. For this, we can use the
+            <i>:nth-child()</i> selector in CSS.
+            <br />
+            <strong>CSS CODE:</strong>
+            (odd items): <br />
+
+            <i>
+              ul li:nth-child(odd) { <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            <strong>HTML CODE:</strong> <br />
+            <i>
+              &lt;ul> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li></i>Item 1<i>1&lt;/li> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li></i>Item 2<i>&lt;/li> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li></i>Item 3<i>&lt;/li> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li></i>Item 4<i>&lt;/li> <br />
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;li></i>Item 5<i>&lt;/li> <br />
+              &lt;/ul></i>
+            <br />
+
+            In this example, all list items <span>in odd positions</span> (1,
+            3, 5, …) will turn red.
+            <br />
+            &nbsp;&nbsp;&nbsp;- To target even positions (2, 4, 6, …), use
+            nth-child(even).
+            <br />
+            &nbsp;&nbsp;&nbsp;- You can also use formulas like
+            <span>nth-child(3n)</span>, which means "select every 3rd
+            element."
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- For <span>example</span>: 2n
+            selects every 2nd item, 4n selects every 4th item, and so on.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Links Psuedo Selector</h3>
+        <p>
+          <em>
+            We can change the style of an anchor (<i>&lt;a></i>) element in
+            different states, like <span>normal</span> style,
+            <span>hover</span> style, <span>visited</span> style,
+            <span>focused</span> style, and <span>clicked</span> (active)
+            style. For this, we use CSS <span>pseudo-classes</span>.
+            <br />
+            <strong>CSS CODE:</strong> <br />
+            <i>a:link</i> { <br />
+            color: red; <br />
+            } <br />
+            <i>a:visited</i> { <br />
+            color: dodgerblue; <br />
+            } <br />
+            <i>a:hover</i> { <br />
+            color: white; <br />
+            background-color: black; <br />
+            } <br />
+            <i>a:active</i> { <br />
+            color: green; <br />
+            background-color: black; <br />
+            } <br />
+            <i>a:focus</i> { <br />
+            color: red; <br />
+            background-color: black; <br />
+            } <br />
+            <strong>HTML CODE:</strong> <br />
+            <i>&lt;a href="#"></i>NaseebCodeStudio<i>&lt;/a></i> <br />
+            <hr color="red" style="margin-block: 8px" />
+            <strong> Important Notes:</strong> <br />
+
+            &nbsp;&nbsp;&nbsp;- These link pseudo-classes should always follow
+            this order: <span>LVHAF</span> 👉🏻 :link, :visited, :hover,
+            :active, :focus.
+            <br />
+            &nbsp;&nbsp;&nbsp;- <span>Between</span> :active and :focus, only
+            one will be applied depending on the situation.
+            <br />
+            &nbsp;&nbsp;&nbsp;- <strong>Best practice:</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span>Make</span> :link and
+            :visited <span>a pair</span> (they should have similar styles).
+            You can group them like this:
+            <br />
+            <strong>CSS CODE:</strong> <br />
+
+            &nbsp;&nbsp;&nbsp;a:link, a:visited { ... } <br />
+            <strong>Make</strong> <span>:hover</span> and
+            <span>:focus</span> another pair (they usually share similar
+            styles).
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Eight ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop8" />
+      <label for="drop8">Pseudo Element Selectors</label>
+      <div class="content">
+        <p>
+           <a href="https://flukeout.github.io/" target="_blank">Selector Game Free Resource</a> <br>
+          <em>
+            Sometimes we want to style only a <span>part of an element</span>,
+            like the first letter, first word, or first line of a paragraph.
+            For this, we can use pseudo-element selectors or the inline
+            element called <span>&lt;span></span>. <br />
+            - You can wrap text inside a <span>&lt;span></span> element and
+            then style it using CSS. <br />
+            - A pseudo-element selector is written with a name followed by
+            <span>double colons (::)</span>.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>First letter & First Line</h3>
+        <p>
+          <em>
+            <strong>CSS CODE:</strong>
+            <br />
+            <i>p::first-letter</i> { <br />
+            color: red; <br />
+            font-size: 140%; <br />
+            } <br />
+
+            <i>p::first-line</i> { <br />
+            color: red; <br />
+            font-size: 140%; <br />
+            } <br />
+            <strong>HTML CODE:</strong>
+            <br />
+            <i>&lt;p></i>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            rerum temporibus cum veritatis! Asperiores in, quas molestias
+            assumenda magnam, rerum expedita dolores vel eum eaque distinctio
+            iste blanditiis iure. Illum!
+            <i>&lt;/p></i>
+            <br />
+            <strong>Explanation:</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp;- p::first-letter is used to style
+            <span>only the first letter</span> of a paragraph.
+            <br />
+            &nbsp;&nbsp;&nbsp;- p::first-line is used to style
+            <span>only the first line</span> of a paragraph.
+            <br />
+            Just like you can target the first letter, you can also target the
+            first line of the selected element.
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <p>
+          <em>
+            <strong>Difference between Pseudo-class and Pseudo-element
+              Selector:</strong>
+            <br />
+
+            <strong>Pseudo-element</strong> selector is used to style a
+            specific part of an element. <br />
+            <span>Example</span>: ::first-letter, ::first-line.
+            <br />
+            <strong>Pseudo-class</strong> selector is used to style an element
+            in a particular state. <br />
+            <span>Example</span>: :hover, :focus on a button or link.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Selection</h3>
+        <p>
+          <em>
+            By <span>default</span>, when you select text in a browser, the
+            text color changes to white and the background color changes to
+            blue. But we can control this using the CSS pseudo-element
+            selector <span>::selection</span>.
+            <br />
+            <strong>CSS CODE:</strong>
+            <br />
+            <i>p::selection</i> { <br />
+            background-color: red; <br />
+            } <br />
+
+            <i>::selection</i> { <br />
+            background-color: red; <br />
+            } <br />
+            &nbsp;&nbsp;- p::selection 👉🏻 changes the selection style only for
+            text inside <i>&lt;p></i> tags.
+            <br />
+            &nbsp;&nbsp;- ::selection 👉🏻 changes the selection style for all
+            text on the page.
+            <br />
+            So, when you use the <i>::selection {}</i> pseudo-element selector
+            and then select text in your browser, you’ll see the style you
+            applied instead of the default blue background.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Before & After</h3>
+        <p>
+          <em>
+            <strong>Pseudo-element selectors (::before and ::after)</strong>
+            <br />
+            The <span>pseudo-element</span> selectors <i>::befor</i>e and
+            <i>::after</i> are used to add content before or after an element.
+            <br />
+            They are mostly used for effects and animations, like adding a
+            background color inside a button, or creating a line/box that
+            appears when you hover over something but now.
+            <br />
+            For <span>example</span>, if we want to add something before and
+            after every paragraph, we can do it like this:
+            <br />
+            <strong>CSS CODE:</strong>
+            <br />
+            <i>p::before</i> { <br />
+            content: '...'; <br />
+            } <br />
+
+            <i>p::after</i> { <br />
+            content: '...'; <br />
+            } <br />
+            This will add ... before and after each paragraph.
+            <br />
+            You can test this easily using the Inspect Tool in your browser,
+            where you’ll see how these selectors work.
+            <br />
+            ⚡ <strong>Important to know:</strong>
+            <br />
+            &nbsp;&nbsp;- These pseudo-elements act like extra elements inside
+            the DOM, but they are not real HTML elements (like <i>&lt;p></i>,
+            <i>&lt;h1></i>, etc.).
+            <br />
+            &nbsp;&nbsp;- They are <span>virtual elements</span> that let you
+            add content or styles without changing your actual HTML.
+            <br />
+            &nbsp;&nbsp;- <span>After the content</span> property, you can
+            also <span>add styles</span> (like color, background, etc.),
+            depending on what you want to design.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Nine ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop9" />
+      <label for="drop9">Selectors Specificity</label>
+      <div class="content">
+        <p>
+         <a href="https://flukeout.github.io/" target="_blank">Selector Game Free Resource</a> <br>
+          <em>
+            Quite often, we face a situation where more than one CSS rule
+            targets the same element, and these rules can conflict. So, how
+            does the browser decide which rule to apply? That’s where CSS
+            specificity (or “weight”) comes in.
+            <hr color="red" style="margin-block: 8px" />
+
+            Let’s create an example:
+            <br />
+            <strong>HTML Code:</strong>
+            <br />
+            <i>
+              &lt;article> <br />
+              &nbsp;&nbsp;&nbsp;&lt;h1 class="highlight"></i>NaseebCodeStudio<i>&lt;/h1> <br />
+              &lt;/article></i>
+            <br />
+
+            <strong>CSS Code:</strong>
+            <br />
+            <i>h1</i> { <br />
+            color: dodgerblue; <br />
+            } <br />
+
+            <i>.highlight</i> { <br />
+            color: red; <br />
+            } <br />
+            Here, both rules target the <i>&lt;h1></i> element. Which one will
+            apply? The class selector .highlight is more specific than the
+            element selector h1, so the text will be red.
+            <br />
+            You can also target the same element using an ID selector. For
+            example, if we give the <i>&lt;h1></i> an id, then the ID selector
+            will override the class selector, because ID selectors have higher
+            specificity.
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>Think of specificity like a triangle:</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp; - At the top = ID selectors (strongest, unique
+            only one ID per page element).
+            <br />
+            &nbsp;&nbsp;&nbsp; - Middle = Class and attribute selectors.
+            <br />
+            &nbsp;&nbsp;&nbsp; - Bottom = Element selectors (weakest, since we
+            can have many elements of the same type).
+            <br />
+            We can also make a selector more specific by combining them. For
+            example:
+            <br />
+            <i>article h1.highlight</i> { <br />
+            &nbsp;&nbsp;&nbsp;color: green; <br />
+            } <br />
+
+            This means: Select the <i>&lt;h1></i> inside
+            <i>&lt;article></i> with the class highlight. This is more
+            specific than just .highlight or h1.
+            <br />
+            In VS Code, if you hover over selectors, you’ll see specificity
+            values as three numbers:
+            <br />
+            &nbsp;&nbsp;&nbsp; - ID selectors = 100
+            <br />
+            &nbsp;&nbsp;&nbsp; - Class/attribute selectors = 10
+            <br />
+            &nbsp;&nbsp;&nbsp; - Element/type selectors = 1
+            <br />
+            If two <span>selectors have the same specificity</span>, then the
+            last one written in your CSS file will be applied.
+            <br />
+            When you <span>right-click an element</span> in the browser and
+            choose Inspect, you’ll see the Styles tab.
+            <br />
+            &nbsp;&nbsp;&nbsp; - The <span>first styles</span> usually come
+            from your own CSS file.
+            <br />
+            &nbsp;&nbsp;&nbsp; - Next, you may see
+            <span>styles from libraries</span> (like Normalize.css).
+            <br />
+            &nbsp;&nbsp;&nbsp; - Finally, you’ll see the
+            <span>browser’s default styles</span>, called the
+            <span>user-agent stylesheet</span>. These are the basic styles the
+            browser applies if you don’t define your own.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Specificity Numbers</h3>
+        <p>
+          <em>
+            The <i>!important</i> keyword has the highest specificity compared
+            to all other selectors.
+            <br />
+            <strong>CSS CODE</strong>
+            <br />
+            <i>h1</i> { <br />
+            &nbsp;&nbsp;&nbsp;color: blue !important; <br />
+            } <br />
+
+            Even if the h1 has a class or an ID selector with different
+            styles, the !important rule will still apply, and the text color
+            will be blue.
+            <br />
+            We use <i>!important</i> when we want to
+            <span>force a style</span> to override all other rules.
+            <br />
+            ⚠️ But using <i>!important</i> is considered bad practice because
+            it breaks the normal specificity rules.
+            <span>This makes your CSS harder to read, debug, and maintain</span>.
+            <br />
+            <strong>Specificity values:</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>h1</i> {} 👉🏻 specificity 1
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>.className</i> {} 👉🏻 specificity 10
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>#idName</i> {} 👉🏻 specificity 100
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>#idName.className</i> {} 👉🏻 specificity 110
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>h1#idName.className</i> {} 👉🏻 specificity
+            111
+            <br />
+            Bad practice example (too complex and hard to maintain):
+            <br />
+            <i>html body #featured h2#products.highlight</i> {}
+            <br />
+            This selector is too long and complicated, so it should be
+            avoided.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Ten ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop10" />
+      <label for="drop10">Inheritance</label>
+      <div class="content">
+        <p>
+          <em>
+            One of the most important concepts in CSS is
+            <span>inheritance</span>. Some CSS properties automatically
+            inherit their values from the parent element.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <em>
+          <h3>Inherit</h3>
+        </em>
+        <p>
+          <em>
+            <strong>HTML CODE</strong> <br />
+            <i>&lt;p></i>
+            We Are Learning <i>&lt;strong></i>HTML<i>&lt;/strong></i> from
+            NaseebCodeStudio.
+            <i>&lt;/p></i>
+            <br />
+            <strong>CSS CODE</strong> <br />
+            <i>p{ <br />
+              &nbsp;&nbsp;&nbsp;color: dodgerblue; <br />
+              } <br /></i>
+
+            When we look at the result, the child element
+            <i>&lt;strong></i> inside a paragraph <i>&lt;p></i> inherits the
+            text color from its parent. By default, the
+            <i>&lt;strong></i> element (child) gets the same color as the
+            paragraph (parent). You can check this using browser DevTools,
+            where you’ll see that the color is inherited from the
+            <i>&lt;p></i> tag.
+            <br />
+            &nbsp;&nbsp; - We can explicitly set the
+            <i>&lt;strong></i> element to a different color, for
+            <span>example</span>:
+            <br />
+            <i>
+              strong { <br />
+              &nbsp;&nbsp;&nbsp;color: dodgerblue; <br />
+              } <br />
+            </i>
+            <hr color="red" style="margin-block: 8px" />
+            <h3>Initial</h3>
+            But what if we want to <span>stop inheritance</span> and reset the
+            color to its default value? <br />
+            In that case, we can use the <span>initial</span> value:
+            <br />
+            <i>
+              strong { <br />
+              &nbsp;&nbsp;&nbsp;color: initial; <br />
+              } <br />
+            </i>
+            The <span>initial keyword</span> resets the property to its
+            default value, meaning it will not inherit the style from the
+            parent element. <br />
+
+            &nbsp;&nbsp;&nbsp; - Properties that do not inherit by default
+            <br />
+
+            &nbsp;&nbsp;&nbsp; - Not all CSS properties are inherited. For
+            <span>example</span>: <br />
+            <i>
+              p {<br />
+              &nbsp;&nbsp;&nbsp;border: 2px solid red;<br />
+              } <br />
+            </i>
+
+            The <i>&lt;strong></i> element inside the <i>&lt;p></i> will not
+            get its own border. It makes sense otherwise every child would get
+            the same border, which would be messy.
+            <br />
+
+            But if we want to force inheritance for a property that normally
+            doesn’t <span>inherit</span>, we can use the inherit value:
+            <br />
+            <i>
+              strong { <br />
+              &nbsp;&nbsp;&nbsp;color: initial; <br />
+              &nbsp;&nbsp;&nbsp;border: inherit; <br />
+              } <br />
+            </i>
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>Which properties are inherited?</strong>
+            <br />
+            There’s a long list of inherited properties, and most people don’t
+            memorize them. You’ll naturally learn them while working on
+            projects.<br />
+
+            Generally, <span>typography</span> related properties (text and
+            font styles) are inherited, such as:
+            <br />
+            &nbsp;&nbsp;&nbsp;- color <br />
+
+            &nbsp;&nbsp;&nbsp;- font and font-family <br />
+
+            &nbsp;&nbsp;&nbsp;- font-size <br />
+
+            &nbsp;&nbsp;&nbsp;- font-style <br />
+
+            &nbsp;&nbsp;&nbsp;- line-height <br />
+
+            &nbsp;&nbsp;&nbsp;- text-align <br />
+
+            &nbsp;&nbsp;&nbsp;- letter-spacing <br />
+
+            <span>In short</span>: Text and font-related styles are inherited;
+            layout and box-model styles (like borders, margins, and padding)
+            are not.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Eleven ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop11" />
+      <label for="drop11">COLORS</label>
+      <div class="content">
+        <p>
+          <em>In CSS there are few different ways to
+            <span>represent</span> colors: <br />
+            1. Named Color <br />
+            2. RGB Color <br />
+            3. HSL Color <br />
+            4. Hexadecimal Color <br />
+            5. HWB Color <br />
+            The <span>following</span> tools will help you become a color
+            expert. You can pick any individual color in different code
+            formats, generate color palettes, create gradients, and even
+            extract colors from images or logos.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Color Resrouces</h3>
+        <p>
+          <em>
+            1.
+            <a href="https://paletton.com/#uid=c002P0u3i0k7UUa3cZA5wXlaiQ5cFL3" target="_blank">Paletton</a>
+            <br />
+            2.
+            <a href="https://color.adobe.com/" target="_blank">Color Adobe</a>
+            <br />
+            3. <a href="https://colorhunt.co/" target="_blank">ColorHunt</a>
+            <br />
+            4.
+            <a href="https://coolors.co/0b3954-a682ff-81c14b-a4036f-edd3c4" target="_blank">Coolors</a>
+            <br />
+            5.
+            <a href="https://www.fffuel.co/cccolor/" target="_blank">fffuel</a>
+            <br />
+            6.
+            <a href="https://cssgradient.io/" target="_blank">CSS Gradient</a>
+            <br />
+            7.
+            <a href="https://mycolor.space/gradient?ori=to+right+top&hex=%230F00FF&hex2=%23EB12C6&sub=1"
+              target="_blank">MyColor Space</a>
+            <br />
+            8.
+            <a href="https://colorgradient.dev/gradient-generator" target="_blank">Color Gradient Dev</a>
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Color Palettes & Generators🎨</h3>
+        <p>
+          <em>
+            1.
+            <a href="https://www.happyhues.co/" target="_blank">Color Gradient Dev</a>
+            <br />
+            2.
+            <a href="https://mycolor.space/" target="_blank">My Color Space</a>
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>CSS Gradient Tools🌈</h3>
+        <p>
+          <em>
+            1.
+            <a href="https://uigradients.com/#BetweenTheClouds" target="_blank">UI Gradient</a>
+            <br />
+            2.
+            <a href="https://gradienthunt.com/" target="_blank">Gradient Hunter</a>
+            <br />
+            3.
+            <a href="https://cssgradient.io/" target="_blank">CSS Gradient</a>
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>🖌 Color Pickers & Converters</h3>
+        <p>
+          <em>
+            1. <a href="https://paletton.com/" target="_blank">Paletton</a>
+            <br />
+            2.
+            <a href="https://m2.material.io/design/color/" target="_blank">M2 Material</a>
+            <br />
+            3.
+            <a href="https://www.colorhexa.com/" target="_blank">COLOR Hexa</a>
+            <br />
+            4.
+            <a href="https://htmlcolorcodes.com/" target="_blank">HTML Color Codes</a>
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>📷 Extract Colors from Images</h3>
+        <p>
+          <em>
+            1.
+            <a href="https://lokeshdhakar.com/projects/color-thief/" target="_blank">Lokesh Dhakar</a>
+            <br />
+            2.
+            <a href="https://www.canva.com/colors/color-palette-generator/" target="_blank">Canva</a>
+            <br />
+            3.
+            <a href="https://imagecolorpicker.com/" target="_blank">Image Color Picker</a>
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>🔥 Unique & Fun Tools</h3>
+        <p>
+          <em>
+            1.
+            <a href="https://flatuicolors.com/" target="_blank">Flat UI Colors</a>
+            <br />
+            2.
+            <a href="https://tailwindcss.com/docs/customizing-colors" target="_blank">Tailwind CSS</a>
+            <br />
+            3.
+            <a href="https://www.colorsandfonts.com/" target="_blank">Color Sand Fonts</a>
+            <br />
+            4.
+            <a href="https://brandcolors.net/" target="_blank">Brand Colors</a>
+            <br />
+            5. <a href="http://colormind.io/" target="_blank">Color Mind</a>
+            <br />
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Color Picker Window</h3>
+        <p>
+          <em>
+            <img src="ColorPickerWindow.png" alt="Color Picker Winodow From VS Code" width="90%" />
+            <br />
+            as we move that small point over the color picker window the
+            angles have different names like:
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>🎨 Color Terms (in VS Code / Color Pickers)</strong>
+            <br />
+            &nbsp;&nbsp;&nbsp;- Hue: The pure base color on the color wheel
+            (like red, blue, green).
+            <br />
+            <span>Example</span>: Red is a hue.
+            <br />
+            &nbsp;&nbsp;&nbsp;- Shade: A hue + black (darker version of the
+            color).
+            <br />
+            <span>Example</span>: Dark red is a shade of red.
+            <br />
+            &nbsp;&nbsp;&nbsp;- Tint: A hue + white (lighter version of the
+            color).
+            <br />
+            <span>Example</span>: Pink is a tint of red.
+            <br />
+            &nbsp;&nbsp;&nbsp;- Tone: A hue + gray (softer, muted version of
+            the color).
+            <br />
+            <span>Example</span>: Dusty rose is a toned version of red.
+            <br />
+            <strong>Quick Shortcut to Remember:</strong>
+            <br />
+            Hue = Base color
+            <br />
+            Shade = Base Color + Black
+            <br />
+            Tint = Base Color + White
+            <br />
+            Tone = Base Color + Gray
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>🌈 Most Common CSS Named Colors</h3>
+        <p>
+          <em>
+            we can use these color with any element which takes color:
+            <br />
+            <i>
+              p{ <br />
+              &nbsp;&nbsp;&nbsp;color: red; <br />
+              } <br />
+            </i>
+            &nbsp;&nbsp;- Red <br />
+            &nbsp;&nbsp;- Green <br />
+            &nbsp;&nbsp;- Blue <br />
+            &nbsp;&nbsp;- Black <br />
+            &nbsp;&nbsp;- White <br />
+            &nbsp;&nbsp;- Gray <br />
+            &nbsp;&nbsp;- Silver <br />
+            &nbsp;&nbsp;- Yellow <br />
+            &nbsp;&nbsp;- Orange <br />
+            &nbsp;&nbsp;- Pink <br />
+            &nbsp;&nbsp;- Purple <br />
+            &nbsp;&nbsp;- Brown <br />
+            &nbsp;&nbsp;- Cyan <br />
+            &nbsp;&nbsp;- Magenta <br />
+            &nbsp;&nbsp;- Lime <br />
+            &nbsp;&nbsp;- Gold <br />
+            &nbsp;&nbsp;- Navy <br />
+            &nbsp;&nbsp;- Teal <br />
+            &nbsp;&nbsp;- Olive <br />
+            &nbsp;&nbsp;- Maroon <br />
+            These are the most <span> common CSS color names</span> easy to
+            remember, widely used, and supported in every browser.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>RGB Colors</h3>
+        <p>
+          <em>
+            <i>
+              p{ <br />
+              &nbsp;&nbsp;&nbsp;color: rgb(255, 0, 0); <br />
+              } <br />
+            </i>
+
+            RGB <span>stands for</span> Red, Green, and Blue.
+            <br />
+            Each of these colors takes a value between 0 and 255:
+            <br />
+            &nbsp;&nbsp;&nbsp; - 0 means no color (black).
+            <br />
+            &nbsp;&nbsp;&nbsp; - 255 means full color (brightest).
+            <br />
+            By mixing different values of red, green, and blue, we can create
+            about <span>16.7 million</span> colors. 🎨
+            <br />
+            &nbsp;&nbsp;&nbsp;- To use RGB in CSS, we have a function called
+            <i>rgb()</i>. <br />
+            &nbsp;&nbsp;&nbsp;- The first value is for red <br />
+            &nbsp;&nbsp;&nbsp;- The second value is for green <br />
+
+            The third value is for blue <br />
+            (Values are written with commas.) <br />
+
+            <span> Examples</span>:
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>rgb(255, 0, 0)</i> = Pure Red
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>rgb(0, 255, 0)</i> = Pure Green
+            <br />
+            &nbsp;&nbsp;&nbsp;- <i>rgb(0, 0, 255)</i> = Pure Blue
+            <br />
+            <span>Quick Tip</span>: Think of RGB like
+            <span>mixing light</span> turn all three to 0 and you get black,
+            set all three to 255 and you get white.
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>RGBA Colors</strong>
+            <br />
+
+            <span>rgba()</span> is just like rgb(), but it has one extra value
+            called Alpha.
+            <br />
+            &nbsp;&nbsp;&nbsp; - R = Red (0–255)
+            <br />
+            &nbsp;&nbsp;&nbsp; - G = Green (0–255)
+            <br />
+            &nbsp;&nbsp;&nbsp; - B = Blue (0–255)
+            <br />
+            &nbsp;&nbsp;&nbsp; - A = Alpha (0–1) controls transparency
+            <br />
+            <span> Alpha value details</span>:
+            <br />
+            &nbsp;&nbsp;&nbsp; - 1 Fully visible (no transparency)
+            <br />
+            &nbsp;&nbsp;&nbsp; - 0 Fully transparent (invisible)
+            <br />
+            &nbsp;&nbsp;&nbsp; - 0.5 50% transparent (see-through effect)
+            <br />
+            <span>Examples</span>:
+            <br />
+            &nbsp;&nbsp;&nbsp; - <i>rgba(255, 0, 0, 1)</i> Solid Red
+            <br />
+            &nbsp;&nbsp;&nbsp; - <i>rgba(255, 0, 0, 0.5)</i> Half-transparent
+            Red
+            <br />
+            &nbsp;&nbsp;&nbsp; - <i>rgba(0, 0, 255, 0.3)</i> Light transparent
+            Blue
+            <br />
+            &nbsp;&nbsp;&nbsp; - <i>rgba(0, 255, 0, 0)</i> Fully transparent
+            Green (invisible)
+            <br />
+            <span>Quick Tip</span>: Use <i>rgba()</i> when you want a color
+            that blends with the background, like in overlays, shadows, or
+            buttons with transparency effects.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>HEX Colors</h3>
+        <p>
+          <em>
+            <strong>🔢 Number Systems in CSS Colors</strong>
+            <br />
+            1. Binary (Base-2)
+            <br />
+            &nbsp; &nbsp; &nbsp; - Uses only 0 and 1.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Computers understand everything in binary
+            (on/off, true/false).
+            <br />
+            2. Decimal (Base-10)
+            <br />
+            &nbsp; &nbsp; &nbsp; - Our everyday number system.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Uses digits 0–9.
+            <br />
+            &nbsp; &nbsp; &nbsp; - <span>Example</span>: 255 (the maximum
+            value for RGB colors).
+            <br />
+            3. Hexadecimal (Base-16)
+            <br />
+            &nbsp; &nbsp; &nbsp; - Uses digits 0–9 and letters A–F (where
+            A=10, B=11 … F=15).
+            <br />
+            &nbsp; &nbsp;&nbsp;- Very common in web development for
+            representing colors because it’s shorter than writing long decimal
+            values.
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>🎨 Hex Color System in CSS</strong>
+            <br />
+            In CSS, hex colors <span>start with #</span> and usually have 6
+            characters (3 pairs): <i>#RRGGBB</i>
+            <br />
+            &nbsp; &nbsp; &nbsp; - AA = Alpha (00 = fully transparent, FF =
+            fully visible)
+            <br />
+            <span>Examples:</span>
+            <br />
+            #FF000080 👉🏻 Red with 50% transparency
+            <br />
+            #0000FF33 👉🏻 Blue with ~20% transparency
+            <br />
+            <strong>Quick Tip</strong>:
+            <br />
+            &nbsp; &nbsp; &nbsp; - HEX is just another way to write colors
+            (shorter than RGB).
+            <br />
+            &nbsp; &nbsp; &nbsp; - Always remember: it’s RR GG BB Alpha
+            (optional).
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>🎨HSL Colors</h3>
+        <p>
+          <em>
+            HSL <span>stands for</span> Hue, Saturation, Lightness.
+            <br />
+            &nbsp; &nbsp; &nbsp; - <i>hsl(hue, saturation, lightness)</i>
+            <br />
+            <strong>Position of values:</strong>
+            <br />
+            1. Hue: The base color on the color wheel (0–360°).
+            <br />
+            &nbsp; &nbsp; &nbsp; - 0 = Red, 120 = Green, 240 = Blue.
+            <br />
+            2. Saturation: Intensity of the color (0% = gray, 100% = full
+            color).
+            <br />
+            3. Lightness: Brightness of the color (0% = black, 50% = normal,
+            100% = white).
+            <br />
+            <span>Example</span>:
+            <br />
+            &nbsp; &nbsp; &nbsp; <i>hsl(0, 100%, 50%)</i> Pure Red <br />
+            &nbsp; &nbsp; &nbsp; <i>hsl(120, 100%, 50%)</i> Pure Green <br />
+            &nbsp; &nbsp; &nbsp; <i>hsl(240, 100%, 50%)</i> Pure Blue <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>🎨 HSLA Colors</h3>
+        <p>
+          <em>
+            HSLA is just like HSL but with an extra Alpha value for
+            transparency.
+            <br />
+            &nbsp; &nbsp; &nbsp; -
+            <i>hsla(hue, saturation, lightness, alpha)</i>
+            <br />
+            <strong>Position of values:</strong>
+            <br />
+            1. Hue (0–360°)
+            <br />
+            2. Saturation (0%–100%)
+            <br />
+            3. Lightness (0%–100%)
+            <br />
+            4. Alpha (0–1 transparency)
+            <br />
+            <span>Example</span>:
+            <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>hsla(0, 100%, 50%, 0.5)</i> Half-transparent Red
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>🎨 HWB Colors (Newer CSS Color System)</strong>
+            <br />
+            HWB stands for Hue, Whiteness, Blackness.
+            <br />
+            &nbsp; &nbsp; &nbsp; -
+            <i>hwb(hue whiteness% blackness% / alpha?)</i>
+            <br />
+            <strong>Position of values</strong>:
+            <br />
+            1. Hue: Base color (0–360° on color wheel).
+            <br />
+            2. Whiteness: How much white is mixed in (0% = no white, 100% =
+            full white).
+            <br />
+            3. Blackness: How much black is mixed in (0% = no black, 100% =
+            full black).
+            <br />
+            4. Alpha (optional): Transparency (0–1).
+            <br />
+            <span>Example</span>:
+            <br />
+            &nbsp; &nbsp; &nbsp; <i>hwb(0 0% 0%) </i> Pure Red <br />
+            &nbsp; &nbsp; &nbsp; <i>hwb(0 0% 0% / 0.5)</i> Half-transparent
+            Red <br />
+            &nbsp; &nbsp; &nbsp; <i>hwb(200 30% 20%)</i> Blue with some white
+            and black <br />
+            <hr color="red" style="margin-block: 8px" />
+            <strong>Color Palette in VS Code & Browser DevTools</strong>
+            <br />
+            In VS Code, when you <span>hover over a color</span> in your CSS
+            code, a color palette window will appear.
+            <br />
+            &nbsp;&nbsp;&nbsp;- You can see the base color, alpha
+            (transparency), and a full color collection.
+            <br />
+            &nbsp; &nbsp; &nbsp; - At the <span>top</span>, you’ll see the
+            current color code or color name. You can
+            <span>click on it</span> to switch between HEX, RGB, HSL, etc.
+            <br />
+            The same kind of color palette is
+            <span>also available in the browser</span> (DevTools).
+            <br />
+            &nbsp; &nbsp; &nbsp; - Just <span>right-click</span> on your page
+            Inspect.
+            <br />
+            &nbsp; &nbsp; &nbsp; - If a color is already applied, you’ll see a
+            small color preview box.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Click on that color, and the color palette
+            window will open, allowing you to adjust or change the color just
+            like in VS Code.
+            <br />
+            <strong>Tip</strong>: Both
+            <span>VS Code and browser</span> DevTools have built-in color
+            pickers. Use them to quickly test and adjust colors without
+            memorizing codes.
+          </em>
+        </p>
+        <p>
+          <em>
+            Most developers preper the hex color system to use in frontend
+            development because it is short and easy to remember.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Twelve ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop12" />
+      <label for="drop12">Gradients</label>
+      <div class="content">
+        <p>
+          <em>
+            With 🌈gradients, we can create a smooth transition between two or
+            more colors.
+            <br />
+            Technically, gradients are treated as images in CSS. That’s why we
+            cannot use background-color for gradients.
+            <br />
+            <strong>Instead, we use:</strong>
+            <br />
+            &nbsp; &nbsp; &nbsp; - background-image for gradients only.
+            <br />
+            &nbsp;&nbsp;&nbsp;- or the shorthand background to set both colors
+            and images (including gradients).
+            <br />
+            <span>Quick Tip</span>: Remember, colors = background-color, but
+            gradients = background-image.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Linear Gradient🎨</h3>
+        <p>
+          <em>
+            A linear gradient creates a smooth color transition in a straight
+            line (top to bottom, left to right, or at any angle).
+            <br />
+            <strong>CSS CODE:</strong>
+            <br />
+            <i>div{ <br />
+              &nbsp; &nbsp; &nbsp; width: 300px; <br />
+              &nbsp; &nbsp; &nbsp; height: 300px; <br />
+              &nbsp; &nbsp; &nbsp; background: linear-gradient(direction,
+              color1, color2, ...);<br />}</i>
+
+            1. Default Gradient (Top to Bottom)
+            <br />
+            If you don’t give a direction, the gradient goes from top to
+            bottom.
+            <br />
+            <i>
+              &nbsp; &nbsp; &nbsp; background: linear-gradient(red, yellow);
+            </i>
+            <br />
+            👉🏻 Starts with red at the top and moves to yellow at the bottom.
+            <br />
+            2. Direction with Keywords
+            <br />
+            You can set the direction using keywords like to right, to left,
+            to top. <br />
+            <i>
+              &nbsp; &nbsp; &nbsp; background: linear-gradient(to right, blue,
+              pink);
+            </i>
+            <br />
+            👉🏻 Gradient goes from blue (left) to pink (right).
+            <br />
+            3. Direction with Angles
+            <br />
+            You can also <span>use angles</span> (0° to 360°).
+            <br />
+            &nbsp; &nbsp; &nbsp; - 0deg = bottom to top
+            <br />
+            &nbsp; &nbsp; &nbsp; - 90deg = left to right
+            <br />
+            &nbsp; &nbsp; &nbsp; - 180deg = top to bottom
+            <br />
+            &nbsp; &nbsp; &nbsp; - 270deg = right to left
+            <br />
+            &nbsp; &nbsp; &nbsp; background: linear-gradient(90deg, green,
+            orange);
+            <br />
+            👉🏻 Gradient goes left to right. <br />
+            4. Multiple Colors
+            <br />
+            You can add <span>more than two </span>colors.
+            <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>background: linear-gradient(to right, red, yellow, green);</i>
+            <br />
+            👉🏻 Smoothly blends from red to yellow to green.
+            <br />
+            5. Using Percentages / Color Stops
+            <br />
+            You can control where <span>each color starts</span> or ends.
+            <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>background: linear-gradient(to right, red 20%, yellow 50%,
+              green 80%);</i>
+            <br />
+            👉🏻 Red covers the first 20%, Yellow up to 50%, Green up to 80%.
+            <br />
+            6. Repeating Linear Gradient
+            <br />
+            If you want a striped effect, use
+            <span>repeating-linear-gradient()</span>. <br />
+            <i>
+              background: repeating-linear-gradient( <br />
+              &nbsp; &nbsp; &nbsp; 45deg, /* angle */ <br />
+              &nbsp; &nbsp; &nbsp; red, /* start */ <br />
+              &nbsp; &nbsp; &nbsp; red 10%, /* red covers first 10% */ <br />
+              &nbsp; &nbsp; &nbsp; yellow 10%, /* yellow starts at 10% */
+              <br />
+              &nbsp; &nbsp; &nbsp; yellow 20% /* yellow ends at 20% */ <br />
+              ); <br />
+            </i>
+            👉🏻 This repeats red and yellow stripes diagonally.
+            <br />
+            <strong>Quick Tip</strong>:
+            <br />
+            &nbsp; &nbsp; &nbsp; - Use linear-gradient() for smooth
+            transitions.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Use repeating-linear-gradient() for
+            patterns/stripes.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Play with angles + percentages to control
+            the design.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>🎨 Radial Gradients</h3>
+        <p>
+          <em>
+            A radial gradient is a <span>smooth color transition</span> that
+            starts from the center and spreads outward in a circle or ellipse.
+            <br />
+            Think of it like <span>dropping paint</span> in the middle of a
+            page and watching it spread out in rings.
+            <br />
+            <strong>CSS CODE</strong>
+            <br />
+            <i>
+              div{
+              <br />
+              &nbsp; &nbsp; &nbsp; width: 500px; <br />
+              &nbsp; &nbsp; &nbsp; height: 500px; <br />
+              &nbsp;&nbsp;&nbsp;background-image: radial-gradient(shape size
+              at position, color1, color2, ...);
+              <br />
+              } <br />
+            </i>
+            1. Shapes <br />
+
+            - <strong>Circle</strong>: Gradient spreads evenly in all
+            directions (perfect circle).
+            <br />
+            <i> &nbsp; &nbsp; &nbsp; radial-gradient(circle, red, blue); </i>
+            <br />
+            - <strong>Ellipse</strong> Gradient stretches more in width or
+            height (oval shape).
+            <br />
+            <i> &nbsp; &nbsp; &nbsp; radial-gradient(ellipse, red, blue); </i>
+            <br />
+            2. Position
+            <br />
+            &nbsp; &nbsp; - We can control where the gradient starts using the
+            at keyword.
+            <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>radial-gradient(circle at center, red, blue);</i> /* Default
+            center */ <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>radial-gradient(circle at top left, red, blue);</i> <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>radial-gradient(circle at bottom right, red, blue);</i> <br />
+            👉🏻 Positions can be keywords (center, top, left, etc.) or
+            percentages (20% 70%).
+            <br />
+            &nbsp; &nbsp; &nbsp; - First value = x-axis (left to right).
+            <br />
+            &nbsp; &nbsp; &nbsp; - Second value = y-axis (top to bottom).
+            <br />
+            &nbsp; &nbsp; &nbsp;
+            <i>radial-gradient(circle at 30% 70%, red, blue);</i>
+            <br />
+            3. Color Stops & Percentages
+            <br />
+            &nbsp; &nbsp; -You can control where colors change with
+            percentages.
+            <br />
+            <i>
+              &nbsp; &nbsp; &nbsp; radial-gradient(circle, red 20%, yellow
+              50%, blue 100%);
+            </i>
+            <br />
+            &nbsp; &nbsp; &nbsp; - Red ends at 20% of the radius.
+
+            <br />
+            &nbsp; &nbsp; &nbsp; - Yellow ends at 50%.
+
+            <br />
+            &nbsp; &nbsp; &nbsp; - Blue fills the rest.
+            <br />
+            4. Repeating Radial Gradient
+            <br />
+            A repeating version creates patterns instead of a smooth single
+            transition.
+            <br />
+            <i>
+              &nbsp; &nbsp; &nbsp;background-image:
+              repeating-radial-gradient(circle, red 0%, yellow 10%, blue 20%);
+              <br />
+            </i>
+            👉🏻 This pattern will keep repeating infinitely across the
+            background.
+            <br />
+            <hr color="red" style="margin-block: 8px" />
+
+            <strong>Quick Tip</strong>:
+            <br />
+            &nbsp; &nbsp; &nbsp; -Use circle when you want a perfect round
+            gradient.
+            <br />
+            &nbsp; &nbsp; &nbsp; -Use ellipse for stretched designs.
+            <br />
+            &nbsp; &nbsp; &nbsp; -Use percentages to control where each color
+            starts and ends.
+            <br />
+            &nbsp; &nbsp;&nbsp;-Use repeating radial gradients for fun
+            patterns like ripples or target-like effects.
+          </em>
+        </p>
+        <p>
+          <em>
+            You can <span>use free online tools</span> to create radial or
+            linear gradients without any coding. Just pick your colors,
+            generate the gradient, and copy the code into your CSS file. We’ve
+            already covered <span>useful resources and links</span> in the
+            color section.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Thirteen ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop13" />
+      <label for="drop13">Borders, & Outline</label>
+      <div class="content">
+        <h3>Borders</h3>
+        <p>
+          <em>
+            <i>div{ <br />
+              &nbsp; &nbsp; &nbsp; width: 300px; <br />
+              &nbsp; &nbsp; &nbsp; height: 300px; <br />
+              &nbsp; &nbsp; &nbsp; background-color: red; <br />
+              &nbsp; &nbsp; &nbsp; border: 5px solid red; <br />
+              } <br /></i>
+            1. Border <strong>Shorthand</strong>
+            <br />
+            &nbsp; &nbsp; - Instead of writing multiple properties, we often
+            use the shorthand:
+            <br />
+            <i>&nbsp; &nbsp; border: 2px solid red;</i>
+            <br />
+            <strong>Here’s what each part means:</strong>
+            <br />
+            &nbsp; &nbsp; &nbsp; 2px: border-width
+            <br />
+            &nbsp; &nbsp; &nbsp; solid: border-style
+            <br />
+            &nbsp; &nbsp; &nbsp; red: border-color
+            <br />
+            📝 You can write them <span>separately</span> (border-width,
+            border-style, border-color), <span>but shorthand</span> is cleaner
+            and used most often.
+            <br />
+            2. Borders on <strong>Each Side</strong>
+            <br />
+            &nbsp; &nbsp; - You can also apply a border to each side
+            individually:
+            <br />
+            &nbsp; &nbsp; &nbsp; border-top: 5px solid red; <br />
+            &nbsp; &nbsp; &nbsp; border-right: 5px solid red; <br />
+            &nbsp; &nbsp; &nbsp; border-bottom: 5px solid red; <br />
+            &nbsp; &nbsp; &nbsp; border-left: 5px solid red; <br />
+
+            💡 <strong>Tip</strong>: In VS Code (or most editors), you can
+            type a property and press Ctrl + Space to see available values.
+            <br />
+            3. <strong>Multiple Values</strong> (Clockwise Rule – TRBL)
+            <br />
+            &nbsp; &nbsp; - When you give 4 values, they are applied in
+            clockwise order: <br />
+            &nbsp; &nbsp; &nbsp; border-width: 10px 20px 15px 30px; <br />
+            &nbsp; &nbsp; &nbsp; border-style: solid dotted dashed groove;
+            <br />
+            &nbsp; &nbsp; &nbsp; border-color: red green blue yellow; <br />
+
+            ~ Top = first value
+            <br />
+            ~ Right = second value
+            <br />
+            ~ Bottom = third value
+            <br />
+            ~ Left = fourth value
+            <br />
+            👉🏻 Easy way to remember → TRBL = Top, Right, Bottom, Left
+            <br />
+            4. When <strong>Fewer Values</strong> Are Given
+            <br />
+            &nbsp; &nbsp; - If you don’t give all <span>4 values</span>, CSS
+            automatically fills in the missing ones:
+            <br />
+            ~ 2 values
+            <br />
+            &nbsp; &nbsp; &nbsp; <i>border-width: 10px 20px;</i>
+            <br />
+            = Top/Bottom = 10px, Left/Right = 20px.
+            <br />
+            ~ 3 values
+            <br />
+            &nbsp; &nbsp; &nbsp; <i>border-width: 10px 20px 15px;</i>
+            <br />
+            = Top = 10px, Left/Right = 20px, Bottom = 15px.
+            <br />
+            ~ 1 value
+            <br />
+            &nbsp; &nbsp; &nbsp; <i>border-width: 10px;</i>
+            <br />
+            = All four sides = 10px.
+            <br />
+            <strong>Key Takeaway</strong>
+            You have full control over: <br />
+            &nbsp; &nbsp; &nbsp; - Border width <br />
+            &nbsp; &nbsp; &nbsp; - Border style <br />
+            &nbsp; &nbsp; &nbsp; - Border color <br />
+            And you can set them either all at once (<span>shorthand</span>)
+            or individually (<span>longhand</span>).
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Outline</h3>
+        <p>
+          <em>
+            Outline = A line drawn outside the element’s border.
+            <br />
+            &nbsp; &nbsp; - Unlike border, it does not take space it just sits
+            outside the element.
+            <br />
+            &nbsp; &nbsp; - To create extra gap/space between the border and
+            the outline, we use the property outline-offset.
+            <br />
+            <span>Example</span> outline-offset:
+            <br />
+            <i>
+              p { <br />
+              &nbsp; &nbsp; &nbsp; border: 2px solid black; /* normal border
+              */ <br />
+              &nbsp; &nbsp; &nbsp; outline: 3px solid red; /* outline outside
+              the border */ <br />
+              &nbsp; &nbsp;&nbsp;outline-offset: 5px; /* gap between border
+              and outline */ <br />
+              } <br />
+            </i>
+            &nbsp; &nbsp; &nbsp; - Border = black line around the element.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Outline = red line outside the border.
+            <br />
+            &nbsp; &nbsp; &nbsp; - Outline-offset: 5px = creates a visible gap
+            (space) between border and outline.<br />
+            <strong>Quick Tip</strong>: <br />
+            Think of an outline like a highlighter glow around a box. <br />
+            If you add outline-offset, it’s
+            <span>like pushing the highlighter</span> further away from the
+            box to make it stand out.
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Border Radius</h3>
+        <p>
+          <em>
+            The <span>border-radius</span> property controls the corners of a
+            box. <br />
+            It lets you make <span>corners rounded</span>, or even turn a
+            square/rectangle into a circle or ellipse.
+            <br />
+            <span>Example</span> 1: Same radius for all corners
+            <br />
+            <i>box {<br />
+              width: 300px; <br />
+              height: 300px; <br />
+              background-color: red; <br />
+              &nbsp; &nbsp; &nbsp; border-radius: 50px;<br />
+              }</i>
+            <br />
+            All four corners will have a radius of 50px (equally rounded).
+            <br />
+            <span>Example</span> 2: Two values (diagonal pairs)
+            <br />
+            <i> &nbsp; &nbsp; &nbsp; border-radius: 30px 50px; <br /> </i>
+            &nbsp; &nbsp; &nbsp; - Top-left: & bottom-right: 30px
+            <br />
+            &nbsp; &nbsp; &nbsp; - Top-right: & bottom-left: 50px
+            <br />
+            So corners are paired diagonally.
+            <br />
+            <span>Example</span> 3: Circle shape
+            <br />
+            If the element has the same width and height (a perfect square),
+            we can turn it into a circle:
+            <br />
+            <i> &nbsp; &nbsp; &nbsp; border-radius: 100%; </i>
+            &nbsp; &nbsp; &nbsp; - 100% makes it a perfect circle. <br />
+            (50% also works, but 100% is safer and recommended.)
+            <br />
+
+            <strong>Quick Tip</strong>:
+            <br />
+            Use px values for soft, rounded corners.
+            <br />
+            Use 50% or 100% on a square element to make a circle.
+            <br />
+            Use different values to create ellipses or unique shapes.
+            <br />
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+        <h3>Resrouces</h3>
+        <p>
+          <em>
+            we can create shapes in CSS from following resources easily with
+            no code:
+
+            <br />
+            1.
+            <a href="https://css-tricks.com/the-shapes-of-css/" target="_blank">CSS Tricks</a>
+            <br />
+            2.
+            <a href="https://bennettfeely.com/clippy/?utm_source=chatgpt.com" target="_blank">Bennettfeely</a>
+            <br />
+            3.
+            <a href="https://css-shape.com/?utm_source=chatgpt.com" target="_blank">CSS Shape</a>
+            <br />
+            4.
+            <a href="https://www.cssportal.com/css-clip-path-generator/?utm_source=chatgpt.com" target="_blank">CSS
+              PORTAL</a>
+            <br />
+            5.
+            <a href="https://cssgenerator.org/box-shadow-css-generator.html?utm_source=chatgpt.com" target="_blank">CSS
+              Generator</a>
+            <br />
+            6.
+            <a href="https://webcode.tools/css-generator/drop-shadow?utm_source=chatgpt.com" target="_blank">Web Code
+              Shadow</a>
+            <br />
+            7.
+            <a href="https://neumorphism.io/#e0e0e0" target="_blank">Neumorphism Shadow</a>
+            <br />
+            8.
+            <a href="https://box-shadow.dev/?utm_source=chatgpt.com" target="_blank">BOX SHADOW</a>
+            <br />
+            9.
+            <a href="https://getcssscan.com/css-box-shadow-examples" target="_blank">READY BOX SHADOW</a>
+            <br />
+            10.
+            <a href="https://ui.aceternity.com/tools/box-shadows" target="_blank">UI Aceternity</a>
+            <br />
+            11.
+            <a href="https://html-css-js.com/css/generator/box-shadow/?utm_source=chatgpt.com" target="_blank">HTML CSS
+              JS</a>
+            <br />
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Fourteen ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop14" />
+      <label for="drop14">Box Shadow</label>
+      <div class="content">
+        <h3>Shadows🌟</h3>
+        <p>
+          <em>
+            <strong>Basic Shadow</strong>
+            <br />
+            <i>&nbsp; &nbsp; &nbsp; box-shadow: 10px 10px 10px red;</i>
+            <br />
+
+            In CSS, we can easily add a shadow to any element using the
+            box-shadow property. <br />
+            If you want to add a shadow to an image (especially PNG images
+            with transparent backgrounds), you can also use filter:
+            drop-shadow(). Both work in a similar way, but most of the time we
+            use box-shadow for regular elements.
+            <br />
+            <strong>🛠 How box-shadow Works</strong> <br />
+
+            The box-shadow property takes several values in order: <br />
+
+            1. Horizontal Offset: moves the shadow left or right. <br />
+
+            &nbsp; &nbsp; &nbsp; - Positive value (10px) = moves shadow to the
+            right. <br />
+
+            &nbsp; &nbsp; &nbsp; - Negative value (-10px) = moves shadow to
+            the left. <br />
+
+            2. Vertical Offset: moves the shadow up or down. <br />
+
+            &nbsp; &nbsp; &nbsp; - Positive value (10px) = moves shadow down.
+            <br />
+
+            &nbsp; &nbsp; &nbsp; - Negative value (-10px) = moves shadow up.
+            <br />
+
+            3. Blur Radius → controls how soft or blurred the shadow looks.
+            <br />
+
+            &nbsp; &nbsp; &nbsp; - Larger value = more blur. <br />
+
+            &nbsp; &nbsp; &nbsp; - Example: 10px = soft shadow. <br />
+
+            &nbsp; &nbsp; &nbsp; - (Optional, can be skipped.) <br />
+
+            4. Spread Radius: controls how much the shadow expands or shrinks.
+            <br />
+
+            &nbsp; &nbsp; &nbsp; - Positive value = shadow grows bigger.
+            <br />
+
+            &nbsp; &nbsp; &nbsp; - Negative value = shadow shrinks. <br />
+
+            &nbsp; &nbsp; &nbsp; - (Optional, can be skipped.) <br />
+
+            5. Color: the color of the shadow. <br />
+
+            &nbsp; &nbsp; &nbsp; - Example: red, black, rgba(0,0,0,0.5) <br />
+
+            <span> Example</span> 1: Basic Shadow <br />
+            <i>
+              div { <br />
+              &nbsp; &nbsp; &nbsp;width: 300px; <br />
+              &nbsp; &nbsp; &nbsp;height: 300px; <br />
+              &nbsp; &nbsp; &nbsp;background-color: gold; <br />
+              &nbsp; &nbsp; &nbsp;box-shadow: 10px 10px 10px red; <br />
+              } <br />
+            </i>
+
+            &nbsp; - 10px right, <br />
+            &nbsp; - 10px down, <br />
+            &nbsp; - 10px blur, <br />
+            &nbsp; - red color. <br />
+
+            <span>Example</span> 2: Shadow on All Sides (Trick)
+            <br />
+            If you want the shadow on all sides, set both horizontal and
+            vertical values to 0, and then use blur and spread.
+            <br />
+            <i>&nbsp; &nbsp; &nbsp; box-shadow: 0 0 10px 5px red;</i>
+            <br />
+            This creates an even shadow around the element. <br />
+            <i>&nbsp; &nbsp; &nbsp; box-shadow: 0 0 10px 5px black;</i>
+            <br />
+            This makes a gold box with a nice soft black shadow all around.
+
+            <br />
+        <hr color="red" style="margin-block: 8px" />
+
+            <strong>Quick Tip</strong>:
+            <br />
+            &nbsp; - Horizontal + Vertical: moves the shadow.<br />
+            &nbsp; - Blur: makes it soft.<br />
+            &nbsp; - Spread: makes it bigger.<br />
+            &nbsp; - Color: gives style.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Fifteen ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop15" />
+      <label for="drop15">Summary</label>
+      <div class="content">
+        <h3>📖Terms</h3>
+        <p>
+          <em>
+
+
+            &nbsp;- <strong>Embedded Stylesheets</strong>: CSS written inside the <i>&lt;style></i> tag in the HTML
+            document.
+            <br> &nbsp;- <strong>External Stylesheets</strong>: CSS written in a separate .css file and linked with
+            <i>&lt;link></i>.
+            <br> &nbsp;- <strong>Inline Styles</strong>: CSS written directly inside an HTML tag using the style
+            attribute.
+            <br> &nbsp;- <strong>Separation of Concerns</strong>: Best practice of keeping HTML (content) separate from
+            CSS (style).
+            <br> &nbsp;- <strong>Inheritance</strong>: Some CSS properties (like color, font-size) pass down from parent
+            to child elements.
+            <br> &nbsp;- <strong>Selectors</strong>: Patterns used to target HTML elements.
+            <br> &nbsp;- <strong>Selector Specificity</strong>: Priority rules for which CSS style is applied when
+            multiple selectors target the same element.
+            <br> &nbsp;- <strong>Relational Selectors</strong>: Select elements based on their relationship to other
+            elements (parent, child, siblings).
+            <br> &nbsp;- <strong>Pseudo-class Selectors</strong>: Target elements in a specific state (e.g., :hover,
+            :first-child).
+            <br> &nbsp;- <strong>Pseudo-element Selectors</strong>: Style a part of an element (e.g., ::before, ::after,
+            ::first-letter).
+            <br> &nbsp;- <strong>Hexadecimal Colors</strong>: Colors represented with #RRGGBB values (e.g., #ff0000).
+            <br> &nbsp;- <strong>RGB Colors</strong>: Colors defined by red, green, and blue values (rgb(255, 0, 0)).
+            <br> &nbsp;- <strong>HSL Colors</strong>: Colors defined by hue, saturation, and lightness (hsl(0, 100%,
+            50%)).
+            <br> &nbsp;- <strong>Linear Gradients</strong>: Smooth color transitions along a straight line.
+            <br> &nbsp;- <strong>Radial Gradients</strong>: Smooth color transitions in a circular or elliptical shape.
+            <br> &nbsp;- <strong>Normalizing CSS</strong>: Using a “reset” or “normalize” stylesheet to make styles
+            consistent across browsers.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>Summary</h3>
+        <p>
+          <em>
+
+            <strong>CSS styles can be applied in three ways</strong>: inline, embedded, and external.
+            <br>
+            <strong>Order of importance</strong>: Inline > Embedded > External (but use external stylesheets for
+            maintainability).
+            <br>
+            <strong>Elements can be targeted using selectors</strong>: type, class, ID, attributes, or relationships.
+            <br>
+            <strong>Relational selectors</strong> (parent-child, sibling) can be fragile — use them carefully.
+            <br>
+            <strong>Pseudo-classes</strong> (e.g., :first-child, :nth-child(odd)) let you style elements based on state
+            or position.
+            <br>
+            <strong>Pseudo-elements</strong> (e.g., ::before, ::after) let you style parts of elements.
+            <br>
+            <strong>Specificity</strong> decides which CSS rule wins when multiple rules target the same element:
+            <br>
+            &nbsp; &nbsp; - ID > Class/Attribute > Element.
+            <br>
+            Some properties (like fonts and text color) are inherited by child elements.
+            <br>
+            &nbsp; &nbsp; - Use initial to stop inheritance.
+            <br>
+            &nbsp; &nbsp; - Use inherit to force inheritance.
+            <br>
+            <strong>Colors</strong> can be defined using names, HEX, RGB/RGBA, or HSL/HSLA.
+            <br>
+            <strong>RGBA and HSLA</strong> include an alpha channel for transparency.
+            <br>
+            <strong>Gradients</strong> are created using linear-gradient() or radial-gradient() and are treated as
+            images.
+            <br>
+            <strong>Borders</strong> can be customized with shorthand (border) or detailed properties (border-width,
+            border-style, border-color).
+            <br>
+            <strong>Shadows</strong> (box-shadow, text-shadow) add depth and highlights to elements.
+
+
+
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px" />
+
+        <h3>📝 CSS Cheat Sheet</h3>
+        <p>
+          <em>
+            <strong>Basic Selectors</strong>
+            <br>
+
+            <i>article</i> /* All &lt;article> elements */ <br>
+            <i>.product </i> /* Elements with class="product" */ <br>
+            <i>#products</i> /* Element with id="products" */ <br>
+            <i>a[href="..."]</i> /* Anchors with exact href */ <br>
+            <i>a[href*="google"]</i> /* Anchors whose href contains "google" */ <br>
+            <i>a[href^="https"]</i> /* Anchors whose href starts with "https" */ <br>
+            <i>a[href$=".com"]</i> /* Anchors whose href ends with ".com" */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+            <strong>Relational Selectors</strong>
+            <br>
+            <i>#products p </i> /* All <p> inside #products */ <br>
+              <i>#products > p</i> /* Direct child
+            <p> of #products */ <br>
+              <i>#products + p</i> /* First
+            <p> immediately after #products */ <br>
+              <i>#products ~ p</i> /* All
+            <p> after #products (siblings) */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>Pseudo-class Selectors</strong>
+              <br>
+              <i>article :first-child </i> /* First child inside &lt;article> */ <br>
+              <i>article :first-of-type</i> /* First element of its type inside article */ <br>
+              <i>article :last-child </i> /* Last child inside &lt;article> */ <br>
+              <i>article :nth-child(odd)</i> /* Odd children */ <br>
+              <i>article :nth-child(even)</i> /* Even children */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>Pseudo-element Selectors</strong>
+              <br>
+              <i>p::first-letter </i> /* First letter of each &lt;p> */ <br>
+              <i>p::first-line</i> /* First line of each &lt;p> */ <br>
+              <i>::selection</i> /* Selected text */ &lt;br>
+              <i>p::before</i> /* Insert content before &lt;p> */ <br>
+              <i>p::after</i> /* Insert content after &lt;p> */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>🎨Colors</strong>
+              <br>
+              color: <i>#fcba03</i>; /* Hex */ <br>
+              color: <i>rgb(252, 186, 3)</i>; /* RGB */ <br>
+              color: <i>rgba(252, 186, 3, 0.5)</i>;/* RGBA (semi-transparent) */ <br>
+              color: <i>hsl(44, 98%, 50%)</i>; /* HSL */ <br>
+              color: <i>hsla(44, 98%, 50%, 0.5)</i>;/* HSLA (semi-transparent) */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>Gradients🌈</strong>
+              <br>
+              background: <i>linear-gradient</i>(blue, yellow); <br>
+              background: <i>linear-gradient</i>(to bottom right, blue, yellow); <br>
+              background: <i>linear-gradient</i>(45deg, blue, yellow 30%); <br>
+              background: <i>radial-gradient</i>(white, yellow); <br>
+              background: <i>radial-gradient</i>(circle, white, yellow); <br>
+              background: <i>radial-gradient</i>(circle at top left, white, yellow); <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>⬛ Borders</strong>
+              <br>
+              <i>border</i>: 10px solid blue; <br>
+              <i>border-width</i>: 10px 20px 30px 40px; /* top right bottom left */ <br>
+              <i>border-radius</i>: 5px; <br>
+              border-radius: 100%; /* Circle */ <br>
+        <hr color="red" style="margin-block: 8px" />
+
+              <strong>🌑 Shadows</strong>
+              <br>
+              box-shadow: 10px 10px; /* <span>Offset shadow</span> */ <br>
+              box-shadow: 10px 10px grey; /* <span>Offset + color</span> */ <br>
+              box-shadow: 10px 10px 5px grey; /* <span>Offset + blur + color</span> */ <br>
+              text-shadow: 3px 3px 5px rgba(0,0,0,0.2); /* <span>Text shadow</span> */ <br>
+
+
+
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+</main>
+  <br /><br /><br /><br />
+</body>
+<!-- <hr color="red" style="margin-block: 8px"> -->
+
+
+</html>
+
+
+

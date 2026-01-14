@@ -1,0 +1,570 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+    <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>NaseebCodeStudio</title>
+    <style>
+      .hover {
+        width: 200px;
+        height: 120px;
+        border-radius: 25px;
+        background: radial-gradient(circle, red, black);
+      }
+
+      .hover:hover {
+        border: 5px groove black;
+        box-shadow: -6px 0 8px rgba(255, 0, 0, 0.6),
+          /* left */ 6px 0 8px rgba(0, 0, 0, 0.6),
+          /* right */ 0 -6px 8px rgba(255, 0, 0, 0.6),
+          /* top */ 0 6px 8px rgba(0, 0, 0, 0.6);
+        /* bottom */
+      }
+
+      .table1 {
+        width: 80%;
+        border-collapse: separate;
+        /* so border-radius works */
+        border-spacing: 0;
+        margin: 20px auto;
+        text-align: center;
+        font-family: Arial, sans-serif;
+      }
+
+      .th1,
+      .td1 {
+        padding: 12px;
+        border: 3px solid black;
+      }
+
+      /* Rounded Corners */
+      .table1 tr:first-child th:first-child {
+        border-top-left-radius: 15px;
+      }
+
+      .table1 tr:first-child th:last-child {
+        border-top-right-radius: 15px;
+      }
+
+      .table1 tr:last-child td:first-child {
+        border-bottom-left-radius: 15px;
+      }
+
+      .table1 tr:last-child td:last-child {
+        border-bottom-right-radius: 15px;
+      }
+
+      /* Border Styles */
+      .tbody1 td:nth-child(1) {
+        border-style: solid;
+      }
+
+      .tbody1 td:nth-child(2) {
+        border-style: dotted;
+      }
+
+      .tbody1 td:nth-child(3) {
+        border-style: dashed;
+      }
+
+      .tbody1 td:nth-child(4) {
+        border-style: double;
+      }
+
+      /* Header (thead) in red */
+      .thead1 {
+        background-color: red;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* Footer (tfoot) in black */
+      .tfoot1 {
+        background-color: black;
+        color: white;
+        font-weight: bold;
+      }
+
+      /* second table code  */
+      .table2 {
+        border-collapse: collapse;
+        width: 60%;
+        text-align: left;
+        font-family: Arial, sans-serif;
+      }
+
+      .th2,
+      .td2 {
+        border: 1px solid #c4dcf3;
+        padding: 10px 15px;
+      }
+
+      .thead2 .th2 {
+        background-color: #427fef;
+        color: white;
+      }
+
+      .tbody2 .tr2:nth-child(odd) {
+        background-color: #eef7ff;
+      }
+
+      .tfoot2 .td2 {
+        background-color: #427fef;
+        color: white;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- icon right  -->
+    <a
+      href="https://www.youtube.com/@NaseebCodeStudio/playlists"
+      target="_blank"
+    >
+      <div class="icon shadow-box"></div>
+    </a>
+<main>
+    <!-- ==================📃One drop================== -->
+    <ul class="drop">
+      <li>
+        <input type="checkbox" id="drop1" />
+        <label for="drop1">Shapes</label>
+        <div class="content">
+          <p style="text-align: center; margin-bottom: 10px">
+            <em> 👇You should be able to create following🔥: </em>
+          </p>
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <div
+              style="
+                width: 200px;
+                height: 200px;
+                background-color: tomato;
+                box-shadow: 10px 10px lightgray;
+                border-radius: 20px;
+              "
+            ></div>
+            <br />
+            <div
+              class="square-border"
+              style="
+                width: 150px;
+                height: 150px;
+                background-color: red;
+                border: 5px solid black;
+                outline: 3px dashed red;
+              "
+            ></div>
+
+            <br />
+            <div class="hover"></div>
+            <br />
+            <div
+              style="
+                width: 200px;
+                height: 200px;
+                border-radius: 100%;
+                background-color: rgb(96, 176, 255);
+                box-shadow: 0 0 10px 10px rgb(0, 88, 176);
+              "
+            ></div>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================📃 DROP TWO================== -->
+    <ul class="drop">
+      <li>
+        <input type="checkbox" id="drop2" />
+        <label for="drop2">Table</label>
+        <div class="content">
+          <table class="table1">
+            <thead class="thead1">
+              <tr class="tr1">
+                <th class="th1">Solid</th>
+                <th class="th1">Dotted</th>
+                <th class="th1">Dashed</th>
+                <th class="th1">Double</th>
+              </tr>
+            </thead>
+            <tbody class="tbody1">
+              <tr class="tr1">
+                <td class="td1">Row 1</td>
+                <td class="td1">Row 1</td>
+                <td class="td1">Row 1</td>
+                <td class="td1">Row 1</td>
+              </tr>
+              <tr class="tr1">
+                <td class="td1">Row 2</td>
+                <td class="td1">Row 2</td>
+                <td class="td1">Row 2</td>
+                <td class="td1">Row 2</td>
+              </tr>
+              <tr class="tr1">
+                <td class="td1">Row 3</td>
+                <td class="td1">Row 3</td>
+                <td class="td1">Row 3</td>
+                <td class="td1">Row 3</td>
+              </tr>
+            </tbody>
+            <tfoot class="tfoot1">
+              <tr>
+                <td colspan="4" class="td1">This is the Footer</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================📃 DROP Three ================== -->
+    <ul class="drop">
+      <li>
+        <input type="checkbox" id="drop3" />
+        <label for="drop3">Table Two</label>
+        <div class="content">
+          <table class="table2">
+            <thead class="thead2">
+              <tr class="tr2">
+                <th class="th2">Country</th>
+                <th class="th2">OrderID</th>
+                <th class="th2">Order Amount</th>
+              </tr>
+            </thead>
+            <tbody class="tbody2">
+              <tr class="tr2">
+                <td class="td2">USA</td>
+                <td class="td2">1000</td>
+                <td class="td2">$1,300</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2">USA</td>
+                <td class="td2">1001</td>
+                <td class="td2">$700</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2">CA</td>
+                <td class="td2">1002</td>
+                <td class="td2">$2,000</td>
+              </tr>
+              <tr class="tr2">
+                <td class="td2">CA</td>
+                <td class="td2">1003</td>
+                <td class="td2">$1,000</td>
+              </tr>
+            </tbody>
+            <tfoot class="tfoot2">
+              <tr class="tr2">
+                <td colspan="2" class="td2">Total</td>
+                <td class="td2">$5,000</td>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================📃 DROP Four ================== -->
+    <ul class="drop">
+      <li>
+        <input type="checkbox" id="drop4" />
+        <label for="drop4">Shapes Source Code</label>
+        <div class="content">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <h2>SHAPE-1</h2>
+
+            <strong>HTML CODE</strong>
+            &lt;div class="shape1">&lt;/div>
+
+            <strong>CSS CODE</strong>
+            .shape1{ <br />
+            width: 200px;
+            <br />
+            height: 200px; <br />
+            background-color: tomato; <br />
+            box-shadow: 10px 10px lightgray; <br />
+            border-radius: 20px;
+            <br />
+            } <br />
+
+            <hr color="red" style="margin-block: 8px" width="300px" />
+            <h2>SHAPE-2</h2>
+
+            <strong>HTML CODE</strong>
+            &lt;div class="shape2">&lt;/div>
+
+            <strong>CSS CODE</strong>
+            .shape2{ <br />
+
+            width: 150px; <br />
+            height: 150px; <br />
+            background-color: red; <br />
+            border: 5px solid black; <br />
+            outline: 3px dashed red; <br />
+            } <br />
+
+            <hr color="red" style="margin-block: 8px" width="300px" />
+            <h2>SHAPE-3</h2>
+
+            <strong>HTML CODE</strong>
+            &lt;div class="shape3">&lt;/div>
+            <strong>CSS CODE</strong>
+            .shape3 { <br />
+            width: 200px; <br />
+            height: 120px; <br />
+            border-radius: 25px; <br />
+            background: radial-gradient(circle, red, black); <br />
+            } <br />
+
+            .shape3:hover { <br />
+
+            border: 5px groove black; <br />
+            box-shadow: -6px 0 8px rgba(255, 0, 0, 0.6), /* left */ <br />
+            6px 0 8px rgba(0, 0, 0, 0.6), /* right */ <br />
+            0 -6px 8px rgba(255, 0, 0, 0.6), /* top */ <br />
+            0 6px 8px rgba(0, 0, 0, 0.6); /* bottom */ <br />
+            } <br />
+
+            <hr color="red" style="margin-block: 8px" width="300px" />
+
+            <h2>SHAPE-4</h2>
+            <strong>HTML CODE</strong>
+            &lt;div class="shape4">&lt;/div>
+            <br /><strong>CSS CODE</strong> .shape4{ <br />
+            width: 200px; <br />
+            height: 200px; <br />
+            border-radius: 100%; <br />
+            background-color: rgb(96, 176, 255); <br />
+            box-shadow: 0 0 10px 10px rgb(0, 88, 176); <br />
+            } <br />
+          </div>
+        </div>
+      </li>
+    </ul>
+    <!-- ==================📃 DROP Five ================== -->
+    <ul class="drop">
+      <li>
+        <input type="checkbox" id="drop5" />
+        <label for="drop5">Tables Source Code</label>
+        <div class="content">
+          <div
+            style="
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              flex-direction: column;
+            "
+          >
+            <h2>Table-1</h2>
+
+            <strong>HTML CODE</strong>
+            &lt;table class="table1"> <br />
+            &nbsp;&lt;thead class="thead1"> <br />
+            &nbsp;&nbsp;&lt;tr class="tr1"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th1">Solid&lt;/th> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th1">Dotted&lt;/th> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th1">Dashed&lt;/th> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th1">Double&lt;/th> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/thead> <br />
+            &nbsp;&lt;tbody class="tbody1"> <br />
+            &nbsp;&nbsp;&lt;tr class="tr1"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 1&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 1&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 1&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 1&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&nbsp;&lt;tr class="tr1"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 2&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 2&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 2&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 2&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&nbsp;&lt;tr class="tr1"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 3&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 3&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 3&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td1">Row 3&lt;/td> <br /> 
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/tbody> <br />
+            &nbsp;&lt;tfoot class="tfoot1"> <br />
+            &nbsp;&nbsp;&lt;tr> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td colspan="4" class="td1">This is the
+            Footer&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/tfoot> <br />
+            &lt;/table> <br />
+            <strong>CSS CODE</strong>
+            <br />
+            .table1 { <br />
+            width: 80%; <br />
+            border-collapse: separate; <br />
+            /* so border-radius works */ <br />
+            border-spacing: 0; <br />
+            margin: 20px auto; <br />
+            text-align: center; <br />
+            font-family: Arial, sans-serif; <br />
+            } <br />
+
+            .th1, <br />
+            .td1 { <br />
+            padding: 12px; <br />
+            border: 3px solid black; <br />
+            } <br />
+
+            /* Rounded Corners */ <br />
+            .table1 tr:first-child th:first-child { <br />
+            border-top-left-radius: 15px; <br />
+            } <br />
+
+            .table1 tr:first-child th:last-child { <br />
+            border-top-right-radius: 15px; <br />
+            } <br />
+
+            .table1 tr:last-child td:first-child { <br />
+            border-bottom-left-radius: 15px; <br />
+            } <br />
+
+            .table1 tr:last-child td:last-child { <br />
+            border-bottom-right-radius: 15px; <br />
+            } <br />
+
+            /* Border Styles */ <br />
+            .tbody1 td:nth-child(1) { <br />
+            border-style: solid; <br />
+            } <br />
+
+            .tbody1 td:nth-child(2) { <br />
+            border-style: dotted; <br />
+            } <br />
+
+            .tbody1 td:nth-child(3) { <br />
+            border-style: dashed; <br />
+            } <br />
+
+            .tbody1 td:nth-child(4) { <br />
+            border-style: double; <br />
+            } <br />
+
+            /* Header (thead) in red */ <br />
+            .thead1 { <br />
+            background-color: red; <br />
+            color: white; <br />
+            font-weight: bold; <br />
+            } <br />
+
+            /* Footer (tfoot) in black */ <br />
+            .tfoot1 { <br />
+            background-color: black; <br />
+            color: white; <br />
+            font-weight: bold; <br />
+            } <br />
+            <hr color="red" style="margin-block: 8px" width="300px" />
+
+            <h2>Table-2</h2>
+            <strong>HTML CODE</strong>
+
+            &lt;table class="table2"> <br />
+            &nbsp;&lt;thead class="thead2"> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th2">Country&lt;/th> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th2">OrderID&lt;/th> <br />
+            &nbsp;&nbsp;&nbsp;&lt;th class="th2">Order Amount&lt;/th> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/thead> <br />
+            &nbsp;&lt;tbody class="tbody2"> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">USA&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">1000&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">$1,300&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">USA&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">1001&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">$700&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">CA&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">1002&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">$2,000&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">CA&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">1003&lt;/td> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">$1,000&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/tbody> <br />
+            &nbsp;&lt;tfoot class="tfoot2"> <br />
+            &nbsp;&nbsp;&lt;tr class="tr2"> <br />
+            &nbsp;&nbsp;&nbsp;&lt;td colspan="2" class="td2">Total&lt;/td>
+            <br />
+            &nbsp;&nbsp;&nbsp;&lt;td class="td2">$5,000&lt;/td> <br />
+            &nbsp;&nbsp;&lt;/tr> <br />
+            &nbsp;&lt;/tfoot> <br />
+            &lt;/table> <br />
+
+            <strong>CSS CODE</strong>
+            /* second table code */ <br />
+            .table2 { <br />
+            border-collapse: collapse; <br />
+            width: 60%; <br />
+            text-align: left; <br />
+            font-family: Arial, sans-serif; <br />
+            } <br />
+
+            .th2, <br />
+            .td2 { <br />
+            border: 1px solid #c4dcf3; <br />
+            padding: 10px 15px; <br />
+            } <br />
+
+            .thead2 .th2 { <br />
+            background-color: #427fef; <br />
+            color: white; <br />
+            } <br />
+
+            .tbody2 .tr2:nth-child(odd) { <br />
+            background-color: #eef7ff; <br />
+            } <br />
+
+            .tfoot2 .td2 { <br />
+            background-color: #427fef; <br />
+            color: white; <br />
+            font-weight: bold; <br />
+            } <br />
+          </div>
+        </div>
+      </li>
+    </ul>
+</main>
+    <br /><br /><br /><br />
+  </body>
+</html>
+
+
+
+
+

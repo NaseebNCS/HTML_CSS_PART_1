@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+  <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaseebCodeStudio</title>
+</head>
+
+<body>
+  <!-- icon right  -->
+  <a href="https://www.youtube.com/@NaseebCodeStudio/playlists" target="_blank">
+    <div class="icon shadow-box"></div>
+  </a>
+<main>
+  <!-- ==================📃 Drop One ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop1" />
+      <label for="drop1">Elements Behaviour</label>
+      <div class="content">
+        <p>
+          <em>HTML elements are the building blocks of a webpage. Each element has its <span>own behavior</span> some
+            start
+            on a new line, some stay in the same line, and some can act like both depending on how you style them.</em>
+          <br>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>Block Level Elements</h3>
+        <p>
+          <em>
+            Behavior: Always start on a new line and take up the <span>full width</span> available (from left to right).
+            <br>
+            Think of them as big boxes.
+            <br>
+            Examples:
+            <i>
+              &lt;div>,
+              &lt;p>,
+              &lt;h1> to &lt;h6>,
+              &lt;section>, &lt;header>, &lt;footer>, &lt;article>,
+              &lt;ul>, &lt;ol>, &lt;li>,
+              &lt;table>
+            </i>
+
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <h3>Inline Level Elements</h3>
+        <p>
+          <em>
+            Behavior: Stay in the same line as the text or elements around them. They only take up as much <span>width
+              as needed</span>.
+            <br>
+            Think of them as small words inside a sentence.
+            <br>
+            Examples:
+            <i>
+              &lt;span>,
+              &lt;a>,
+              &lt;strong>, &lt;b>, &lt;em>, &lt;i>,
+              &lt;img>,
+              &lt;label>
+            </i>
+          </em>
+
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <h3>Inline-Block Level Elements</h3>
+        <p>
+          <em>
+            Behavior: They <span>act like inline</span> elements (stay in the same line), but you can also set their
+            width, height, margin, and padding <span>like block</span> elements.
+            <br>
+            Think of them as a mini box inside a line.
+            <br>
+            Example:
+
+            <i>
+              &lt;button>,
+
+              &lt;input>,
+
+              &lt;select>,
+
+              &lt;textarea&gt;
+            </i>
+            <br>
+            <hr color="red" style="margin-block: 8px">
+
+            <strong>Block</strong>: Big box, full width, new line.
+            <br>
+            <strong>Inline</strong>: Small piece, same line, width fits content.
+            <br>
+            <strong>Inline-block</strong>: Small box, same line, but you can control size like a block.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>Testing Behaviour</h3>
+        <p>
+          <em>
+
+
+            <strong>Open a Website</strong><br>
+
+            - Go to any website (Google, YouTube, an e-commerce site or run your code).
+            <br><br>
+            <strong>Right-Click Inspect</strong><br>
+
+            - Right-click on any part of the page. <br>
+            - Select Inspect (or press F12). <br>
+            - he Developer Tools will open. <br>
+            <br>
+            <strong>Select an Element</strong>
+            <br>
+            - Use the small mouse pointer icon (top-left in DevTools).
+            <br>
+            - Hover and click on a heading, paragraph, link, button, or image.
+            <br><br>
+            <strong>Check Display Behavior</strong>
+            <br>
+            - In the right-side panel (Styles), find the property called display.
+            <br>
+            - It will show one of these:
+            <br>
+            <span>display</span>: block; Element starts on a new line, full width.
+            <br>
+            <span>display</span>: inline; Element stays in the same line, only takes space it needs.
+            <br>
+            <span>display</span>: inline-block; Stays in the line but can behave like a box.
+            <br><br>
+            <strong>Compare Different Elements</strong>
+            <br>
+            - Click on a heading (h1) You’ll see it’s block.
+            <br>
+            - Click on a link (a) You’ll see it’s inline.
+            <br>
+            - Click on a button (button) You’ll see it’s inline-block.
+            <br><br>
+            <strong> Observe Visually</strong>
+            <br>
+            - Notice how some elements jump to a new line (block),
+            <br>
+            - While others sit next to each other (inline/inline-block).
+          </em>
+        </p>
+
+
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Two ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop2" />
+      <label for="drop2">ID & CLASS</label>
+      <div class="content">
+        <p>
+          <strong>Intro</strong>
+          In HTML, id and class are <span>special attributes</span> that we can add to any element. They help us
+          identify elements and apply styles or scripts more easily.
+        </p>
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>ID</h3>
+        <p>
+          <em>
+            🆔
+            - <span>id=""</span> means identity. Think of it like your national ID card or a car’s number plate it’s
+            unique. <br>
+            - Each element can have only one id, and the same id cannot be used for two different elements.
+            <br>
+            Example:
+            <br>
+            <i>&lt;p id="intro"></i>This is a paragraph with a unique ID. <i>&lt;/p></i>
+            <br>
+
+          </em>
+        </p>
+
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>CLASS</h3>
+        <p>
+          <em>
+            👥
+
+            - <span>class=""</span> is used to group elements together that share the same style. <br>
+
+            - Just like in school, students with different IDs can sit in the same class (Math class, English class,
+            etc.). <br>
+
+            - An element can belong to multiple classes at the same time. <br>
+
+            Example:
+            <br>
+            <i>&lt;p class="highlight"></i>This paragraph is in the highlight class. <i>&lt;/p></i> <br>
+            <i>&lt;p class="highlight special"></i>This paragraph belongs to two classes. <i>&lt;/p></i>
+
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+
+        <h3>RULES</h3>
+        <p>
+          <em>
+            📏 Rules for id and class names:
+            <br>
+            - id must be unique no two elements should have the same id.
+            <br>
+            - Don’t start names with numbers (❌ 1box, ✅ box1).
+            <br>
+            - id and class names must be <span>meaningful</span>.
+            <br>
+            - If the name has two or more words, you can write it in:
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;camelCase: <i>myIdName</i>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;snake_case: <i>my_id_name</i>
+            <br>
+            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;kebab-case: <i>my-id-name</i>
+            <br>
+            (❌ never use spaces like 'my id').
+            <br>
+            - No special symbols (like @, #, !) in names.
+            <br>
+            - For classes only, you can use spaces to add multiple classes to one element:
+            <br>
+            <i>&lt;div class="box red large">&lt;/div></i>
+            <hr color="red" style="margin-block: 8px">
+
+            <strong>In short:</strong>
+            <br>
+            ~ Use id for a unique element.
+            <br>
+            ~ Use class to group similar elements (and you can apply multiple classes to one element).
+
+          </em>
+        </p>
+
+
+      </div>
+    </li>
+  </ul>
+
+</main>
+
+  <br /><br /><br /><br />
+</body>
+<!-- <hr color="red" style="margin-block: 8px"> -->
+
+
+</html>
+

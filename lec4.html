@@ -1,0 +1,437 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+  <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaseebCodeStudio</title>
+</head>
+
+<body>
+  <!-- icon right  -->
+  <a href="https://www.youtube.com/@NaseebCodeStudio/playlists" target="_blank">
+    <div class="icon shadow-box"></div>
+  </a>
+<main>
+  <!-- ==================📃 Drop One ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop1" />
+      <label for="drop1">Containers</label>
+      <div class="content">
+        <h3>DIV & SPAN</h3>
+        <p>
+          <em>
+            We often use different elements in HTML for styling purposes. For example, we have navigation bars, a hero
+            section, or cards on e-commerce websites where we see <span>multiple elements together</span> like an image,
+            description, and a button etc grouped together inside one container.
+            <br>
+            In HTML, there are different types of <span>containers</span>, but the most commonly used one is the
+            <i>&lt;div&gt;</i> element (short for division). A div itself has no visual appearance it’s just a container
+            element <span>used to group</span> or wrap up other html elements.
+            <br>
+            Example:
+            <br>
+
+            <i>
+              &lt;div&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;img src="exampleImage.jpg" alt=""&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;p>Lorem ipsum dolor sit amet.&lt;/p&gt; <br>
+              &nbsp;&nbsp;&nbsp;&lt;button>Buy&lt;/button&gt; <br>
+              &lt;/div&gt; <br>
+            </i>
+
+            In this case, you will only see the content (image, text, and button) on the page. But with CSS, you can
+            style this div to look like a card.
+            <br>
+            <hr color="red" style="margin-block: 8px">
+            Another <span>useful container</span> is the <i>&lt;span&gt;</i> element. Unlike div, which is used for
+            larger sections and div is block level element, <i>&lt;span&gt;</i> is used to group small pieces of text
+            inside a sentence and it is inline level element do not break the text to the next line. You can style
+            that part of the text separately to make it look different from the rest of the paragraph.
+
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃 Drop Three ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop3" />
+      <label for="drop3">Semantic Elements</label>
+      <div class="content">
+        <h3>Non Semantic vs Semantic Elements</h3>
+        <em>
+
+          In HTML, <span>div and span</span> are generic containers. They don’t tell us what type of content they hold
+          they’re just used for grouping or styling, they are non meaningful or <span>non semantic</span> elements which
+          don't define their meaning for browser and developer.
+          <br>
+          But in HTML5, we also have <span>semantic elements</span>. These are meaningful containers that describe the
+          type of content inside them. Semantic elements <span>help search engines</span> and <span>developers</span>
+          better understand a web page.
+          <br>
+          <strong>Example with div (generic container)</strong>
+          <br>
+          <i>&lt;div></i> <br>
+          <i>&nbsp;&nbsp;&lt;h1></i>Article Heading<i>&lt;/h1></i> <br>
+          <i>&nbsp;&nbsp;&lt;p></i> <br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis
+          dolor beatae, nihil id nobis iusto earum dicta iure consequatur saepe
+          reiciendis neque fugit eos veniam culpa vero praesentium consectetur! <br>
+          <i> &nbsp;&nbsp;&lt;/p></i> <br>
+          <i>&lt;/div></i> <br>
+
+          This works <span>fine but</span> it doesn’t clearly describe what the content is about.
+
+
+          <hr color="red" style="margin-block: 8px">
+
+          <strong>Example with article (semantic container)</strong>
+          <br>
+          <i>&lt;article></i> <br>
+          <i>&nbsp;&nbsp;&lt;h1></i>Article Heading<i>&lt;/h1></i> <br>
+          <i>&nbsp;&nbsp;&lt;p> </i><br>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita debitis
+          dolor beatae, nihil id nobis iusto earum dicta iure consequatur saepe
+          reiciendis neque fugit eos veniam culpa vero praesentium consectetur! <br>
+          <i>&nbsp;&nbsp;&lt;/p></i> <br>
+          <i>&lt;/article></i> <br>
+
+          Here, the article element <span>tells browsers</span> and search engines: <br>
+          This is an independent piece of content. <br>
+
+          An article <span>doesn’t always mean</span> a blog post or news article. It can also be:
+          <br>
+          - a forum post
+          <br>
+          - a comment
+          <br>
+          - a review
+          <br>
+          - a product card
+          <br>
+          - or any other self-contained content
+
+          <hr color="red" style="margin-block: 8px">
+
+          <strong>Adding Images with figure and figcaption</strong>
+          <br>
+          If your article contains an image, you can wrap it inside a figure element.
+          <br>
+          <i>&lt;figure></i> <br>
+          <i>&nbsp;&nbsp;&lt;img src="NCS.png" alt="" width="100px"></i> <br>
+          <i> &nbsp;&nbsp;&lt;figcaption></i>Learning HTML & CSS with NaseebCodeStudio<i>&lt;/figcaption></i> <br>
+          <i>&lt;/figure></i> <br>
+
+
+          - figure element: groups the image (or chart, table, code block, etc.).
+          <br>
+          - figcaption element: adds a caption or explanation for the figure.
+          <br>
+          <span>Note:</span> figure itself has no visual effect it’s just a container.
+          <hr color="red" style="margin-block: 8px">
+          <strong>Adding Published Date with time</strong>
+          <br>
+          Often, articles show the published date. At first, you might write:
+          <br>
+          <i>&lt;p></i><br>
+          Published January 5, 2025, 5:00 PM <br>
+          <i>&lt;/p></i><br>
+          <hr color="red" style="margin-block: 8px">
+          <strong>Semantic Way</strong> <br>
+          But a <span>more semantic way</span> is to use the time element with a datetime attribute:
+          <br>
+
+          <i>&lt;p></i> <br>
+          Published <br><i>&lt;time datetime="2025-01-05T17:00"></i> <br>January 5, 2025, 5:00 PM <br><i>&lt;/time></i>
+          <br>
+          <i>&lt;/p></i>
+          <br>
+          This makes the <span>date machine-readable</span> (useful for search engines and browsers).
+          <hr color="red" style="margin-block: 8px">
+
+          <h3>Why Semantic Elements Matter?</h3>
+
+          If your whole site only used div and span, it would be difficult for both search engines and developers to
+          understand your content. <br>
+
+          <strong>Semantic elements make your HTML:</strong> <br>
+          - More meaningful <br>
+          - Easier to read and maintain <br>
+          - Better for SEO (search engine optimization) <br>
+
+          <span>In short</span>: Use div and span for generic grouping, but prefer semantic elements (like article,
+          section, header, footer, figure, time) whenever possible.
+        </em>
+
+
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Four ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop4" />
+      <label for="drop4">Web Structure</label>
+      <div class="content">
+        <h3>Semantic Elements</h3>
+        <p>
+
+          <em>
+
+            🧱 <strong>Basic Structure of a Web Page</strong>
+            <br>
+            Most web pages are built with <span>three main</span> parts:
+            <br>
+            - Header: The top part (usually contains logo, navigation, or site info).
+            <br>
+            - Main Content: The middle part where the important information goes.
+            <br>
+            - Footer: The bottom part (usually contains copyright, links, or contact info).
+            <hr color="red" style="margin-block: 8px">
+            <h3>Extra Elements</h3>
+
+            <strong>Aside</strong>
+            Sometimes a webpage <span>has a sidebar</span> (for ads, related links, or extra info). <br>
+            👉 For that, we use the <i>&lt;aside></i> element.
+            <br>
+            <strong>Nav</strong>
+            In the header, we often create a navigation bar (menu with links to other pages).
+            👉 For that, we use the <i>&lt;nav></i> element.
+            <br>
+            Navigation can <span>also appear</span> in the footer or inside a sidebar.
+            <br>
+            <strong>Section</strong>
+            Inside the main content, we might have different parts, like:
+            <br>
+            - A Top Products section.
+            <br>
+            - A Testimonials section.
+            <br>
+            👉For this, we use the <i>&lt;section></i> element. It groups related content together. <br>
+            ⚠️Every <i>&lt;section></i> should have a heading (like <i>&lt;h2></i>). If headings are missing, the page
+            may show a<span> validation error</span>. <br>
+
+            <strong>Article</strong>
+            Use <i>&lt;article></i> for self-contained content that can stand alone. <br>
+            Examples: blog post, news story, or a single product card. <br>
+            👉You can have:
+            <br>
+            Multiple <i>&lt;articles></i> inside one <i>&lt;section></i>.
+            <br>
+            Or multiple <i>&lt;sections></i> inside one <i>&lt;article></i>.
+            <br>
+            💡Important Note:
+            <span>Don’t get confused:</span>
+            <br>
+            <i>&lt;header></i> and <i>&lt;footer></i> are not only for the whole page.
+            <br>
+            You can also use them inside a section or an article (for example, a product card with its own header and
+            footer).
+            <br>
+            The exact structure depends on the type of webpage you are building.
+            <br>
+            Code Example:👇 <br>
+
+            <img src="headerStructure.png" alt="A strucutre of web page header" style="width: 98%;"> <br>
+            <img src="mainStructure.png" alt="A structure of web page main section" style="width: 99%;"> <br>
+            <img src="footerStructure.png" alt="A structure of main page footer" style="width: 98%;">
+
+            <br>
+            <h3>HTML Elements and Their Uses</h3>
+
+            <i>&lt;main>&lt;/main></i>
+
+            <br>
+
+            This element represents the main content of a webpage or searchable content. Every page should have only one
+            <i>&lt;main></i>.
+            If we use <span>more than one</span> <i>&lt;main></i> in the same page, it will cause a <span>validation
+              error</span> (because there should only be one main section).
+
+            <br>
+
+            <i>&lt;section>&lt;/section></i>
+
+            <br>
+
+            Used to <span>group related</span> content together.
+            <strong>Example</strong>: You might use a <i>&lt;section></i> for "About Us," "Services," or "Contact" parts
+            of your site.
+
+            <br>
+
+            <i>&lt;header>&lt;/header></i>
+
+            <br>
+
+            Represents the <span>introductory</span> content.
+            It can be used at the top of the whole page or at the top of a section/article.
+            Usually contains things like a logo, navigation menu, or title.
+
+            <br>
+            &lt;footer>&lt;/footer>
+            <br>
+            Works like the opposite of <i>&lt;header></i>.
+            It represents the closing or bottom content of a page or section.
+            Usually contains copyright, contact info, or links.
+            <br>
+
+            <i>&lt;aside>&lt;/aside></i>
+            <br>
+            Represents content that is not directly related to the main content but still useful.
+            <strong>Example</strong>: a sidebar with ads, related links, or extra notes.
+            <br>
+            <strong>In short:</strong>
+            <br>
+            - Main = main content (only one per page).
+            <br>
+            - Section = group related content.
+            <br>
+            - Header = top/intro part.
+            <br>
+            - Footer = bottom/closing part.
+            <br>
+            - Aside = extra or side info.
+          </em>
+
+
+        </p>
+
+
+
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Drop Five ================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop5" />
+      <label for="drop5">Summary</label>
+      <div class="content">
+        
+        <p>
+          
+
+~ <i>&lt;head></i> This section gives information about the webpage (like title, description, or links to CSS/JS).
+<br>
+~ <i>&lt;p></i> Defines a paragraph. It can have one line or many lines of text.
+<br>
+~ <i>&lt;em></i> Shows emphasized text. By default, browsers display it in italic.
+<br>
+~ <i>&lt;strong></i> Highlights important text. By default, browsers show it in bold.
+<br>
+~ <i>&lt;i></i> and <i>&lt;b></i> Old tags used for italic and bold. They are not recommended now because CSS should handle styling, not HTML.
+<br>
+~ Headings (<i>&lt;h1></i> to <i>&lt;h6></i>) Represent titles and subtitles.
+<br>
+~ <i>&lt;h1></i> is the most important and should be used only once per page.
+<br>
+~ Headings must follow order (don’t skip levels, e.g., from <i>&lt;h1</i>> directly to <i>&lt;h4></i>).
+<br>
+~ Entities Used to show special characters.
+<br>
+~ <i>&lt;a></i> (anchor) Creates hyperlinks with the href attribute. Links can go to:
+<br>
+&nbsp;&nbsp;- Another webpage
+<br>
+&nbsp;&nbsp;- A location on the same page
+<br>
+&nbsp;&nbsp;- A file
+<br>
+&nbsp;&nbsp;- An email address
+<br>
+Relative vs Absolute URLs:
+<br>
+~ Relative URL Path based on the current page.
+<br>
+~ Absolute URL Full web address. It can start with / (root of the site) or with http:// (different website).
+<br>
+~ <i>&lt;img></i> Displays images. Always use the alt attribute for:
+<br>
+&nbsp;&nbsp;- Accessibility (helps visually impaired users).
+<br>
+&nbsp;&nbsp;- Backup text (if the image doesn’t load).
+<br>
+~ <i>&lt;video></i> and <i>&lt;audio></i> Used for multimedia. They support attributes like:
+<br>
+&nbsp;&nbsp;- controls: Shows play/pause buttons.
+<br>
+&nbsp;&nbsp;- autoplay Plays automatically.
+<br>
+&nbsp;&nbsp;- loop Repeats again and again.
+<br>
+Lists <br>
+&nbsp;&nbsp; - <i>&lt;ul></i>  Unordered list (bullets, order doesn’t matter).
+<br>
+&nbsp;&nbsp; - <i>&lt;ol></i>  Ordered list (numbers, order matters).
+<br>
+&nbsp;&nbsp; - <i>&lt;dl></i>  Description list (used for glossaries or metadata).
+<br>
+~ <i>&lt;table></i>  Displays tabular data.
+<br>
+&nbsp;&nbsp; - <i>&lt;tr></i>  Table row.
+<br>
+&nbsp;&nbsp; - <i>&lt;td></i>  Table data cell.
+<br>
+&nbsp;&nbsp; - <i>&lt;th></i>  Table header cell.
+<br>
+~ <i>&lt;div></i> and <i>&lt;span></i> Generic containers.
+<br>
+~ <i>&lt;div></i> Block-level container (starts on a new line, takes full width).
+<br>
+~ <i>&lt;span></i> Inline container (stays within a line).
+<br>
+&nbsp;&nbsp; - Use them mainly for styling when no semantic tag fits.
+<br>
+Semantic elements (HTML5) Make code more meaningful for search engines and screen readers. Examples:
+<br>
+&nbsp;&nbsp; - <i>&lt;header></i>  Top section of a page/section.
+<br>
+&nbsp;&nbsp; - <i>&lt;footer></i>  Bottom section.
+<br>
+&nbsp;&nbsp; - <i>&lt;nav></i>  Navigation links.
+<br>
+&nbsp;&nbsp; - <i>&lt;main></i>  Main content area.
+<br>
+&nbsp;&nbsp; - <i>&lt;aside></i>  Side content (ads, sidebars, extra info).
+<br>
+&nbsp;&nbsp; - <i>&lt;article></i>  Independent article or blog post.
+<br>
+&nbsp;&nbsp; - <i>&lt;section></i>  A section of related content.
+<br>
+&nbsp;&nbsp; - <i>&lt;figure></i>  Image or graphic with caption.
+<br>
+&nbsp;&nbsp; - <i>&lt;time></i>  Represents a time or date.
+<br>
+&nbsp;&nbsp; - <i>&lt;mark></i>  Highlights text.
+
+
+
+        </p>
+      </div>
+    </li>
+  </ul>
+</main>
+
+  <br /><br /><br /><br />
+</body>
+<!-- <hr color="red" style="margin-block: 8px"> -->
+
+
+</html>
+

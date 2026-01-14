@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+body {
+  background-color: black;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-image: url(bg.png);
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  max-height: 200vh;
+}
+::selection{
+  background-color: white;
+  color: red;
+}
+h1 {
+  color: white;
+  margin-left: 5px;
+  text-align: center;
+}
+
+.chapter {
+  margin: 30px auto;
+  width: 20%;
+  font-size: 1rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border: 5px solid white;
+  border-radius: 10px;
+  padding: 20px 10px;
+  font-weight: bold;
+}
+.lecture,
+a {
+  padding: 3px;
+  color: white;
+  text-decoration: none;
+  transition: linear 0.5s;
+  display: block;
+  width: 100%;
+}
+
+.lecture:hover {
+  background-color: rgba(0, 0, 0, 0.32);
+  border-radius: 20px;
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  transform: translatex(10px);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  border: 2px solid red;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  border-radius: 50%;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 20px;
+  background-image: url(NCS.png);
+  background-position: center;
+  background-size: cover;
+  z-index: 999;
+}
+
+.bubble {
+  position: absolute;
+  bottom: -100px;
+  border-radius: 50%;
+  opacity: 0.7;
+  animation: floatUp linear infinite;
+  z-index: -999;
+}
+
+@keyframes floatUp {
+  0% {
+    transform: translateY(0) scale(1.5);
+    opacity: 0.8;
+  }
+  100% {
+    transform: translateY(-120vh) scale(0.5);
+    opacity: 0;
+  }
+}
+
+@media (max-width: 1150px) {
+  .chapter {
+    margin: 30px auto;
+    width: 30%;
+  }
+}
+@media (max-width: 771px) {
+  .chapter {
+    margin: 30px auto;
+    width: 35%;
+  }
+}
+@media (max-width: 662px) {
+  .chapter {
+    margin: 30px auto;
+    width: 50%;
+  }
+}
+@media (max-width: 500px) {
+  .chapter {
+    margin: 30px auto;
+    width: 60%;
+  }
+}
+@media (max-width: 400px) {
+  .chapter {
+    margin: 30px auto;
+    width: 80%;
+  }
+}
+

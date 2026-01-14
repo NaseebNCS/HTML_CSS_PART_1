@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta name="author" content="Naseeb Khan" />
+    <meta
+      name="keywords"
+      content="HTML, CSS, Naseeb Khan, NCS, NaseebCodeStudio, Web Development Fundamentals"
+    />
+    <meta
+      name="description"
+      content="This is HTML &amp; CSS Part 1 where you are going to learn the Fundamentals and HTML CSS Basics."
+    />
+  <link rel="shortcut icon" href="NCS.png" type="image/x-icon" />
+  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NaseebCodeStudio</title>
+</head>
+
+<body>
+  <!-- icon right  -->
+  <a href="https://www.youtube.com/@NaseebCodeStudio/playlists" target="_blank">
+    <div class="icon shadow-box"></div>
+  </a>
+<main>
+  <!-- ==================📃One drop================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop1" />
+      <label for="drop1">HTML BASICS</label>
+      <div class="content">
+        <p>
+          <strong>FIRST THING FIRST </strong> <br>
+          <em>Click anywhere on the desktop and create a new folder. Name the <span>folder</span> something like HTML
+            (or any name
+            you prefer). Open VS Code and go to the Explorer tab located at the top-left of the VS Code window.
+            Alternatively, click the File tab at the top header of the window, choose <span>Open Folder</span>(control +
+            o), and
+            select the folder you just created. Since the folder is empty, click on the <span>Explorer tab</span> and
+            create a new
+            file with any name, such as <span>index.html</span>. The .html <span>extension</span> tells the computer
+            that it is an HTML file.</em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <p>
+          <strong>HTML SYNTAX </strong> <br>
+          <em>
+            To tell a browser this is an html document first write &lt;!DOCTYPE html&gt; in index.html file, this is
+            what we called <span>doctype declaration</span> in previous versoin of HTML the doctype declaratoin was so
+            long but HTML5
+            solved this problem, using !doctype html we tell a browser that we are using HTML version 5 <br>
+            The first element is the &lt;html&gt; element, which is the <span>root element</span> used to start a
+            website. The second element is the &lt;head&gt; element, which is the <span>head of a website</span> and is
+            used to provide information about the website & represent the title of a wbsite. The third element is the
+            &lt;body&gt; element, which represents the <span>content of a website</span>. Inside the &lt;head&gt;
+            element, we write the &lt;title&gt; element to define the <span>website’s title</span>. For example,
+            Google’s title appears at the top as ‘Google’ before its logo icon.
+          </em> <br>
+          <hr color="red" style="margin-block: 8px">
+          <strong>FINAL HTML STRUCTURE </strong> <br>
+          <em>
+            Your HTML final structure should look like this👇: <br>
+            <i>
+              &lt;!DOCTYPE html&gt; <br>
+              &lt;html&gt; <br>
+              &nbsp;&nbsp;&lt;head&gt; <br>
+              &nbsp; &nbsp; &nbsp; &lt;title&gt;NaseebCodeStudio&lt;title/&gt; <br>
+              &nbsp;&nbsp;&lt;head/&gt; <br>
+              &nbsp;&nbsp;&lt;body&gt; <br><br>
+              <p>&nbsp;&nbsp;&nbsp;&nbsp;Website content here!</p> <br>
+              &nbsp;&nbsp;&lt;body/&gt; <br>
+              &lt;html/&gt; <br>
+            </i>
+          </em>
+        </p>
+        <p>
+          Use the shortcut key (<span>Shift + 1</span>) and press Enter to generate the HTML boilerplate code in your
+          HTML document. Next, <span>right-click</span> anywhere in the HTML document and select the <span>Open with
+            Live Server</span> option to view your code in a browser. Alternatively, you can use the <span>Live
+            Preview</span> icon located at the top-right corner of the VS Code window.
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <p>
+          <strong>URL</strong>
+          <em>
+            as you run the HTML document with Live Server, you'll get a URL in the address bar of the browser. You will
+            see an <span>IP address: 127.0.0.1</span>. This IP address represents the <span>current computer</span>,
+            also known as the local machine. It is globally recognized as the reference to the local computer. The
+            number 5500 is a <span>port number</span> where the server is listening for HTTP requests. At the end of the
+            URL, you'll see the page or <span>website name</span>, such as index.html.
+          </em>
+        </p>
+        <hr color="red" style="margin-block: 8px">
+        <p>
+          <strong>YOU NEED TO KNOW</strong>
+          <br><em>
+            1. The components we see in HTML are called HTML tags.
+            <br>
+            2. HTML tags are of three types: <br>
+            &nbsp;&nbsp;&nbsp;a. Opening tag: <i>&lt;TagName&gt;</i>
+            b. Closing tag: <i>&lt;TagName/&gt;</i>
+            c. Self-closing tag: <i>&lt;tagName/&gt;</i> OR <i>&lt;tagName&gt;</i> <br>
+             '&lt;' Less than and '&gt;' greater than are called angle / angular brackets.
+            <br>
+            2. An element is the combination of an <span>opening tag + content + closing tag</span>.
+            <br>
+            3. HTML is <span>case-insensitive</span>, but it is good practice to write elements in lowercase.
+            <br>
+            4. <i>&lt;html&gt;</i> element is parent of <i>&lt;head&gt;</i> and <i>&lt;body&gt;</i> elements <br>.
+            5. <i>&lt;head&gt;</i> and <i>&lt;body&gt;</i> elements are siblings of each other & are childs of <i>&lt;html&gt;</i> element.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+
+  <!-- ==================📃Two drop================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop2" />
+      <label for="drop2">FORMATTING</label>
+      <div class="content">
+        <p>
+          <strong>Code Formatting:</strong>
+          <em>Browsers <span>don’t care</span> how we format our code whether we write all the HTML elements in a single
+            line or put
+            each element on a separate line. But when it comes to <span>maintaining and reading</span> code, formatting
+            becomes very
+            important to keep it clean and readable.
+            <br>
+            For this, we use a plugin called Prettier Code Formatter. You can install it from the Extensions tab.
+            Prettier helps us format our code in a consistent way.
+            <br>
+            To use Prettier, <span>right-click</span> anywhere in the document and <span>select</span> Format Document
+            With…, or press <span>Ctrl +
+              Shift + P</span> and choose Prettier Code Formatter. </em> <br>
+          <em>
+            Do you want your code to format automatically every time you save changes? <span>To enable</span> this, go
+            to: File >
+            Preferences > Settings > Search for 'Format on Save' > Check the option. Now, whenever you save the file,
+            the formatting will be applied automatically.
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃Three drop================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop3" />
+      <label for="drop3">Dev Tools</label>
+      <div class="content">
+        <p>
+          Open Dev Tools in Browser Using:
+          <strong>Control + Shift + I / Right Click Choose Inspect </strong><br>
+          You Will Get Following👇 Tabs: <br>
+          <strong>Elements Tab: </strong> <em>Shows the building blocks (HTML) and dress (CSS) of a webpage</em><br>
+          <strong>Console Tab: </strong> <em>A place where the browser talks to you and you can talk back with
+            code.</em><br>
+          <strong>Source Tab: </strong> <em>Shows all the website’s files (like a backpack full of code).</em><br>
+          <strong>Network Tab: </strong> <em>Tells how fast things (images, files, data) are coming to the
+            website.</em><br>
+          <strong>Performance Tab: </strong> <em>Checks if the website is running fast or slow.</em><br>
+          <strong>Application Tab: </strong> <em>Shows website storage (cookies, local data) like a lunchbox.</em><br>
+          <strong>Security Tab: </strong> <em>Checks if the website is safe (lock 🔒 or not).</em><br>
+          <strong>Memory Tab: </strong> <em>Watches how much brain (RAM) the website is using.</em><br>
+          <strong>Lighthouse Tab: </strong> <em>Gives a report card 📋 about the website (speed, mobile-friendliness,
+            SEO).</em><br>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Four drop================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop4" />
+      <label for="drop4">Validating Web Pages</label>
+      <div class="content">
+        <p>
+          <strong>Validation:</strong>
+          <em>
+            as we write code, we might make mistakes. If we don’t use the correct syntax, our web pages may not look or
+            work as expected. In such cases, we can use a validator to find potential errors in our code.
+          </em>
+        <hr color="red" style="margin-block: 8px">
+          <strong><a href="https://validator.w3.org/" target="_blank">HTML VALIDATOR:</a></strong>
+          <em>
+            This is a standard markup validation service. It provides free methods to check and validate our HTML code.
+            <br>
+            You can validate in three ways:
+            <br>
+            1. <strong>By Address</strong>, If your site is live, just enter the URL into the validator.
+            <br>
+            2. <strong>By File Upload</strong>, Upload your HTML file and click Check.
+            <br>
+            3. <strong>By Direct Input</strong>, Copy and paste your HTML code directly into the validator.
+            <br>
+            After validation, you’ll see all the warnings and errors in your code, along with guidance on how to fix
+            them.
+          </em>
+
+        <hr color="red" style="margin-block: 8px">
+
+          <strong><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS VALIDATOR:</a></strong>
+          <em>
+            The interface is the same as in HTML. Here, you can validate your code by entering a URL, uploading a file,
+            or pasting code directly. After choosing any option, just click the Check button, and it will show you what
+            needs to be fixed in your code.
+            <span>
+              Always use validators they help keep your coding and website on the right track
+            </span>
+          </em>
+        </p>
+      </div>
+    </li>
+  </ul>
+  <!-- ==================📃 Four drop================== -->
+  <ul class="drop">
+    <li>
+      <input type="checkbox" id="drop5" />
+      <label for="drop5">Free Online Tool</label>
+      <div class="content">
+        <a href="https://codepen.io/pen/" target="_blank">codepen</a>
+        <p>
+          <em>Here is a free online tool where you can write HTML, CSS, and JavaScript for free. It’s mainly used for
+            testing or quickly starting a project. </em>
+          <br>
+        </p>
+      </div>
+    </li>
+  </ul>
+</main>
+
+  <br /><br /><br /><br />
+</body>
+
+
+</html>
+
